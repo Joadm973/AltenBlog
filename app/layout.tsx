@@ -29,7 +29,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
           <div className="flex min-h-screen flex-col">
             <Navbar />
-            <main className="flex-1 w-full max-w-screen-xl mx-auto">{children}</main>
+            <main className="flex-1 w-full max-w-8xl mx-auto px-4">{children}</main>
             <Footer />
           </div>
         </ThemeProvider>

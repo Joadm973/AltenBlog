@@ -19,7 +19,7 @@ export default function Home() {
       />
 
       <section className="w-full py-12 md:py-24 bg-muted/50 flex items-center justify-center">
-        <div className="container max-w-screen-xl mx-auto px-4 md:px-6 flex flex-col items-center">
+        <div className="container max-w-8xl mx-auto px-4 md:px-6 flex flex-col items-center">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-4xl mx-auto">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Explorez mon parcours</h2>

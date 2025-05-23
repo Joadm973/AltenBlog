@@ -5,7 +5,7 @@ import { Linkedin } from "lucide-react"
 export default function Footer() {
   return (
     <footer className="w-full border-t border-blue-100 bg-gradient-to-b from-white to-blue-50 py-8">
-      <div className="container max-w-screen-xl mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
+      <div className="container max-w-8xl mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-4">
           <Image
             src="/alten-logo.jpg"

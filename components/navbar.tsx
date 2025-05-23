@@ -32,7 +32,7 @@ export default function Navbar() {
 
   return (
     <header className={`sticky top-0 z-50 w-full border-b-2 border-b-blue-600 bg-white transition-all duration-300 ${scrolled ? "shadow-md" : ""}`}>
-      <div className="container max-w-screen-xl mx-auto flex h-20 items-center justify-between">
+      <div className="container max-w-8xl mx-auto flex h-20 items-center justify-between">
         <Link href="/" className="flex items-center space-x-4">
           <div className="relative h-16 w-auto overflow-hidden">
             <Image 

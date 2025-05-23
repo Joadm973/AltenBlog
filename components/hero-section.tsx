@@ -41,7 +41,7 @@ export default function HeroSection({
       {/* Gradient background effect */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-white via-blue-50 to-white opacity-50 z-0"></div>
       
-      <div className="container max-w-screen-xl mx-auto px-4 md:px-6 relative z-10">
+      <div className="container max-w-8xl mx-auto px-4 md:px-6 relative z-10">
         <div className="grid gap-6 lg:grid-cols-[1fr_500px] lg:gap-12 xl:grid-cols-[1fr_550px]">
           <div className={`flex flex-col justify-center space-y-6 ${isAnimated ? 'transition-all duration-1000 transform ' + (isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0') : ''}`}>
             <div className="space-y-4">
