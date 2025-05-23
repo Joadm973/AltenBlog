@@ -1,0 +1,9 @@
+{
+  "css.validate": true,
+  "editor.quickSuggestions": {
+    "strings": true
+  },
+  "tailwindCSS.emmetCompletions": true,
+  "editor.inlineSuggest.enabled": true,
+  "css.lint.unknownAtRules": "ignore"
+}
