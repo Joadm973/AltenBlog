@@ -10,10 +10,10 @@ interface InfoCardProps {
 
 export default function InfoCard({ title, icon: Icon, children }: InfoCardProps) {
   return (
-    <Card className="h-full hover:-translate-y-1 transition-transform duration-300 border-l-4 border-l-primary">
+    <Card className="h-full hover:-translate-y-1 transition-transform duration-300 border-l-4 border-l-primary dark:bg-gray-800 dark:border-l-blue-400">
       <CardHeader className="flex flex-row items-center gap-2 pb-2">
-        <div className="rounded-full bg-primary/10 p-2">
-          <Icon className="h-5 w-5 text-primary" />
+        <div className="rounded-full bg-primary/10 dark:bg-primary/20 p-2">
+          <Icon className="h-5 w-5 text-primary dark:text-blue-400" />
         </div>
         <CardTitle className="text-lg">{title}</CardTitle>
       </CardHeader>

@@ -4,7 +4,7 @@ import { Linkedin } from "lucide-react"
 
 export default function Footer() {
   return (
-    <footer className="w-full border-t border-blue-100 bg-gradient-to-b from-white to-blue-50 py-8">
+    <footer className="w-full border-t border-blue-100 dark:border-gray-700 bg-gradient-to-b from-white to-blue-50 dark:from-gray-900 dark:to-gray-800 py-8">
       <div className="container max-w-8xl mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-4">
           <Image
@@ -16,7 +16,7 @@ export default function Footer() {
           />
           <div className="h-10 w-px bg-gradient-to-b from-blue-200 to-red-200 mx-2"></div>
           <div className="text-sm">
-            <p className="font-medium text-blue-800">Stage effectué de juin à août 2024</p>
+            <p className="font-medium text-blue-800 dark:text-blue-400">Stage effectué de juin à août 2024</p>
             <p className="text-muted-foreground">
               Un grand merci à ALTEN et à mon tuteur pour cette opportunité enrichissante.
             </p>
@@ -25,10 +25,10 @@ export default function Footer() {
         <div className="flex flex-col items-end gap-2">
           <div className="flex items-center gap-4">
             <Link
-              href="https://linkedin.com/"
+              href="https://www.linkedin.com/in/josué-adami-441082169/"
               target="_blank"
               rel="noopener noreferrer"
-              className="flex items-center gap-2 rounded-md bg-blue-50 px-3 py-1.5 text-blue-600 hover:bg-blue-100 transition-colors"
+              className="flex items-center gap-2 rounded-md bg-blue-50 dark:bg-blue-900/30 px-3 py-1.5 text-blue-600 dark:text-blue-400 hover:bg-blue-100 dark:hover:bg-blue-900/50 transition-colors"
             >
               <Linkedin className="h-5 w-5" />
               <span className="text-sm font-medium">LinkedIn</span>

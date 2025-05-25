@@ -6,7 +6,7 @@ import { ArrowRight } from "lucide-react"
 
 export default function Future() {
   return (
-    <div className="container mx-auto px-4 py-12 animate-fade-in">
+    <div className="container mx-auto px-4 py-12 animate-fade-in relative z-10">
       <SectionHeader
         title="De l'expérience au projet professionnel"
         description="Découvrez l'impact de ce stage sur mon orientation et mes objectifs futurs."
@@ -30,19 +30,19 @@ export default function Future() {
           </p>
         </div>
         <div className="flex items-center justify-center">
-          <div className="relative h-[300px] w-full overflow-hidden rounded-xl">
+          <div className="relative h-[300px] w-full overflow-hidden rounded-xl shadow-md border border-blue-50 dark:border-blue-900/30">
             <Image
               src="/placeholder.svg?height=600&width=800"
               alt="Représentation de l'évolution professionnelle"
               fill
-              className="object-cover"
+              className="object-cover transition-transform duration-700 hover:scale-105"
             />
           </div>
         </div>
       </div>
 
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold">Impact sur mon parcours</h3>
+        <h3 className="mb-6 text-2xl font-bold gradient-heading">Impact sur mon parcours</h3>
         <div className="grid gap-6 md:grid-cols-3">
           <Card>
             <CardHeader>
@@ -84,39 +84,39 @@ export default function Future() {
       </div>
 
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold">Ce que je recherche maintenant</h3>
+        <h3 className="mb-6 text-2xl font-bold gradient-heading">Ce que je recherche maintenant</h3>
         <div className="space-y-6">
           <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md">
               <ArrowRight className="h-5 w-5" />
             </div>
             <div>
-              <h4 className="font-semibold">Approfondir mes connaissances en technologies cloud</h4>
-              <p className="text-muted-foreground">
+              <h4 className="font-semibold text-blue-800 dark:text-blue-300">Approfondir mes connaissances en technologies cloud</h4>
+              <p className="text-muted-foreground dark:text-gray-300">
                 Je souhaite me spécialiser davantage dans les solutions de gestion cloud comme Microsoft Intune, Azure
                 AD et les technologies de déploiement modernes.
               </p>
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md">
               <ArrowRight className="h-5 w-5" />
             </div>
             <div>
-              <h4 className="font-semibold">Développer des compétences en automatisation</h4>
-              <p className="text-muted-foreground">
+              <h4 className="font-semibold text-blue-800 dark:text-blue-300">Développer des compétences en automatisation</h4>
+              <p className="text-muted-foreground dark:text-gray-300">
                 L'automatisation des tâches répétitives est un enjeu majeur pour les équipes support. Je souhaite
                 développer des compétences en scripting (PowerShell) et en automatisation des processus.
               </p>
             </div>
           </div>
           <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-primary text-primary-foreground">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md">
               <ArrowRight className="h-5 w-5" />
             </div>
             <div>
-              <h4 className="font-semibold">Évoluer vers des rôles à responsabilité</h4>
-              <p className="text-muted-foreground">
+              <h4 className="font-semibold text-blue-800 dark:text-blue-300">Évoluer vers des rôles à responsabilité</h4>
+              <p className="text-muted-foreground dark:text-gray-300">
                 À terme, je souhaite évoluer vers des postes à responsabilité comme administrateur système ou chef de
                 projet IT, où je pourrai mettre à profit à la fois mes compétences techniques et transversales.
               </p>

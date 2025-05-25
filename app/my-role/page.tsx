@@ -5,15 +5,15 @@ import { Ticket, Monitor, Cloud, Package } from "lucide-react"
 
 export default function MyRole() {
   return (
-    <div className="container mx-auto px-4 py-12 animate-fade-in">
+    <div className="container mx-auto px-4 py-12 animate-fade-in relative z-10">
       <SectionHeader
         title="Dans les coulisses du Support Informatique"
         description="Découvrez mon rôle et mes missions principales au sein du service Support Informatique d'ALTEN."
       />
 
-      <div className="mt-12 space-y-6">
-        <h3 className="text-2xl font-bold">Description de mon rôle</h3>
-        <p className="text-lg">
+      <div className="mt-12 space-y-6 p-6 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 shadow-lg">
+        <h3 className="text-2xl font-bold text-white dark:text-white">Description de mon rôle</h3>
+        <p className="text-lg text-white dark:text-white">
           Durant ce stage au sein du service Support Informatique d'ALTEN, j'ai occupé le poste de Technicien Support
           Informatique N1/N2. Ma mission principale consistait à assurer un support technique de qualité aux
           collaborateurs de l'entreprise, afin de garantir la continuité de service et de minimiser l'impact des
@@ -22,7 +22,7 @@ export default function MyRole() {
       </div>
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold">Mes missions principales</h3>
+        <h3 className="mb-6 text-2xl font-bold text-white dark:text-white bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-500 dark:to-indigo-600 p-4 rounded-xl inline-block">Mes missions principales</h3>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <MissionCard
             title="Gestion des tickets MySupport"
@@ -72,11 +72,11 @@ export default function MyRole() {
       </div>
 
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold">Outils, méthodes et savoir-faire utilisés</h3>
+        <h3 className="mb-6 text-2xl font-bold text-white dark:text-white bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-500 dark:to-indigo-600 p-4 rounded-xl inline-block">Outils, méthodes et savoir-faire utilisés</h3>
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="space-y-4 rounded-xl bg-muted/50 p-6">
-            <h4 className="font-semibold">Outils techniques</h4>
-            <ul className="ml-6 list-disc space-y-2">
+          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 p-6 shadow-lg">
+            <h4 className="font-semibold text-white dark:text-white">Outils techniques</h4>
+            <ul className="ml-6 list-disc space-y-2 text-white dark:text-white">
               <li>ServiceNow (MySupport) : Outil de ticketing pour la gestion des incidents</li>
               <li>Microsoft SCCM : Pour le déploiement des images système</li>
               <li>Microsoft Intune et Autopilot : Pour la gestion des appareils via le cloud</li>
@@ -85,9 +85,9 @@ export default function MyRole() {
               <li>McAfee : Pour la mise à jour et la vérification des solutions antivirus</li>
             </ul>
           </div>
-          <div className="space-y-4 rounded-xl bg-muted/50 p-6">
-            <h4 className="font-semibold">Méthodologies et processus</h4>
-            <ul className="ml-6 list-disc space-y-2">
+          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 p-6 shadow-lg">
+            <h4 className="font-semibold text-white dark:text-white">Méthodologies et processus</h4>
+            <ul className="ml-6 list-disc space-y-2 text-white dark:text-white">
               <li>Méthodologie ITIL : Pour la gestion des incidents et des demandes</li>
               <li>Processus de déploiement : Préparation, configuration, test, livraison</li>
               <li>Gestion des priorités : Traitement des tickets selon leur niveau d'urgence</li>

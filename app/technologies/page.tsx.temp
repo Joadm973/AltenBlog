@@ -1,0 +1,14 @@
+import SectionHeader from "@/components/section-header"
+
+export default function Technologies() {
+  return (
+    <div className="container mx-auto px-4 py-12 animate-fade-in relative z-10">
+      <SectionHeader
+        title="Boîte à outils technique et humaine"
+        description="Découvrez les compétences techniques et transversales que j'ai mobilisées durant mon stage."
+      />
+      
+      <p className="mt-8">Page simplifiée pour tester les problèmes de chargement</p>
+    </div>
+  )
+}

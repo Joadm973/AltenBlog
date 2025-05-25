@@ -6,7 +6,7 @@ import { Award, Lightbulb, Zap } from "lucide-react"
 
 export default function Learnings() {
   return (
-    <div className="container mx-auto px-4 py-12 animate-fade-in">
+    <div className="container mx-auto px-4 py-12 animate-fade-in relative z-10">
       <SectionHeader
         title="Apprentissages et défis"
         description="Découvrez ce que j'ai appris durant mon stage et les défis que j'ai relevés."
@@ -64,19 +64,17 @@ export default function Learnings() {
             <li>La rapidité avec laquelle j'ai pu monter en compétences grâce à l'accompagnement de l'équipe</li>
           </ul>
         </InfoCard>
-      </div>
-
-      <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold">Une anecdote représentative</h3>
-        <div className="rounded-xl bg-muted/50 p-6">
-          <p className="italic">
+      </div>        <div className="mt-16">
+        <h3 className="mb-6 text-2xl font-bold dark:text-gray-100">Une anecdote représentative</h3>
+        <div className="rounded-xl bg-muted/50 dark:bg-gray-800/70 p-6 border border-blue-50 dark:border-blue-900/30 shadow-sm">
+          <p className="italic dark:text-gray-200">
             Lors de ma troisième semaine de stage, j'ai reçu un ticket urgent d'un manager qui ne pouvait plus accéder à
             ses présentations importantes juste avant une réunion client. Malgré la pression, j'ai gardé mon calme et
             méthodiquement identifié que le problème venait d'une corruption du profil utilisateur. En utilisant les
             outils à ma disposition et en suivant les procédures, j'ai pu restaurer l'accès à ses fichiers en moins de
             30 minutes, juste à temps pour sa présentation.
           </p>
-          <p className="mt-4 italic">
+          <p className="mt-4 italic dark:text-gray-200">
             Cette expérience m'a montré l'importance de rester méthodique sous pression et la satisfaction que procure
             la résolution d'un problème critique pour un utilisateur. Le manager m'a personnellement remercié, ce qui a
             été très gratifiant.
@@ -85,11 +83,11 @@ export default function Learnings() {
       </div>
 
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold">Compétences développées</h3>
+        <h3 className="mb-6 text-2xl font-bold dark:text-gray-100">Compétences développées</h3>
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="space-y-4 rounded-xl bg-muted/50 p-6">
-            <h4 className="font-semibold">Compétences techniques</h4>
-            <ul className="ml-6 list-disc space-y-2">
+          <div className="space-y-4 rounded-xl bg-muted/50 dark:bg-gray-800/70 p-6 border border-blue-50 dark:border-blue-900/30 shadow-sm">
+            <h4 className="font-semibold dark:text-blue-300">Compétences techniques</h4>
+            <ul className="ml-6 list-disc space-y-2 dark:text-gray-300">
               <li>Maîtrise approfondie de ServiceNow pour la gestion des tickets</li>
               <li>Configuration et déploiement via SCCM</li>
               <li>Compréhension des mécanismes d'Intune et Autopilot</li>
@@ -97,9 +95,9 @@ export default function Learnings() {
               <li>Documentation technique claire et précise</li>
             </ul>
           </div>
-          <div className="space-y-4 rounded-xl bg-muted/50 p-6">
-            <h4 className="font-semibold">Compétences transversales</h4>
-            <ul className="ml-6 list-disc space-y-2">
+          <div className="space-y-4 rounded-xl bg-muted/50 dark:bg-gray-800/70 p-6 border border-blue-50 dark:border-blue-900/30 shadow-sm">
+            <h4 className="font-semibold dark:text-blue-300">Compétences transversales</h4>
+            <ul className="ml-6 list-disc space-y-2 dark:text-gray-300">
               <li>Communication adaptée aux différents profils d'utilisateurs</li>
               <li>Gestion efficace des priorités en situation de forte charge</li>
               <li>Résolution méthodique de problèmes complexes</li>

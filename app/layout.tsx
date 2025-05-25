@@ -25,8 +25,8 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-white font-sans antialiased", fontSans.variable)}>
-        <ThemeProvider attribute="class" defaultTheme="light" enableSystem>
+      <body className={cn("min-h-screen bg-white dark:bg-gray-900 font-sans antialiased", fontSans.variable)}>
+        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
           <div className="flex min-h-screen flex-col">
             <Navbar />
             <main className="flex-1 w-full max-w-8xl mx-auto px-4">{children}</main>
