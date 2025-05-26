@@ -13,16 +13,16 @@ export default function FAQ() {
 
       <div className="mx-auto mt-12 max-w-3xl">
         <Accordion type="single" collapsible className="w-full space-y-4">
-          <AccordionItem value="item-1" className="border border-blue-100 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
-            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400">
+          <AccordionItem value="item-1" className="border border-blue-200 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
+            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400 text-gray-800 dark:text-gray-200">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-blue-50 dark:bg-blue-900/50 p-2 flex-shrink-0">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/50 p-2 flex-shrink-0">
                   <HelpCircle className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <span>Quelles étaient vos principales responsabilités chez ALTEN ?</span>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground dark:text-gray-300 pt-2 pb-4 pl-10">
+            <AccordionContent className="text-gray-700 dark:text-gray-300 pt-2 pb-4 pl-10">
               <p>En tant que Technicien Support Informatique N1/N2, mes principales responsabilités étaient :</p>
               <ul className="ml-6 mt-2 list-disc space-y-1">
                 <li>La gestion des tickets d'assistance via l'outil ServiceNow (MySupport)</li>
@@ -32,16 +32,16 @@ export default function FAQ() {
               </ul>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-2" className="border border-blue-100 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
-            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400">
+          <AccordionItem value="item-2" className="border border-blue-200 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
+            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400 text-gray-800 dark:text-gray-200">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-blue-50 dark:bg-blue-900/50 p-2 flex-shrink-0">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/50 p-2 flex-shrink-0">
                   <HelpCircle className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <span>Qu'avez-vous appris durant ce stage ?</span>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground dark:text-gray-300 pt-2 pb-4 pl-10">
+            <AccordionContent className="text-gray-700 dark:text-gray-300 pt-2 pb-4 pl-10">
               <p>
                 Ce stage m'a permis de développer de nombreuses compétences techniques comme la maîtrise de ServiceNow,
                 SCCM, Active Directory et Intune. J'ai également renforcé mes compétences transversales comme la
@@ -51,16 +51,16 @@ export default function FAQ() {
               </p>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-3" className="border border-blue-100 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
-            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400">
+          <AccordionItem value="item-3" className="border border-blue-200 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
+            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400 text-gray-800 dark:text-gray-200">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-blue-50 dark:bg-blue-900/50 p-2 flex-shrink-0">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/50 p-2 flex-shrink-0">
                   <HelpCircle className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <span>Quel a été votre plus grand défi durant ce stage ?</span>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground dark:text-gray-300 pt-2 pb-4 pl-10">
+            <AccordionContent className="text-gray-700 dark:text-gray-300 pt-2 pb-4 pl-10">
               <p>
                 Mon plus grand défi a été la résolution d'un problème complexe lié à Intune qui bloquait le déploiement
                 sur certains modèles d'ordinateurs. Après plusieurs jours d'investigation, j'ai identifié un conflit
@@ -69,16 +69,16 @@ export default function FAQ() {
               </p>
             </AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-4" className="border border-blue-100 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
-            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400">
+          <AccordionItem value="item-4" className="border border-blue-200 dark:border-blue-900/30 rounded-lg bg-white dark:bg-gray-800 px-6 shadow-sm">
+            <AccordionTrigger className="py-4 text-left font-medium text-lg hover:no-underline hover:text-blue-700 dark:hover:text-blue-400 data-[state=open]:text-blue-700 dark:data-[state=open]:text-blue-400 text-gray-800 dark:text-gray-200">
               <div className="flex items-center gap-3">
-                <div className="rounded-full bg-blue-50 dark:bg-blue-900/50 p-2 flex-shrink-0">
+                <div className="rounded-full bg-blue-100 dark:bg-blue-900/50 p-2 flex-shrink-0">
                   <HelpCircle className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <span>Comment ce stage a-t-il influencé votre projet professionnel ?</span>
               </div>
             </AccordionTrigger>
-            <AccordionContent className="text-muted-foreground dark:text-gray-300 pt-2 pb-4 pl-10">
+            <AccordionContent className="text-gray-700 dark:text-gray-300 pt-2 pb-4 pl-10">
               <p>
                 Ce stage a été déterminant dans la construction de mon projet professionnel. Il m'a permis de confirmer
                 mon intérêt pour le domaine du support informatique tout en m'ouvrant à de nouvelles perspectives,

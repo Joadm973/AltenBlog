@@ -13,26 +13,24 @@ export default function Technologies() {
       />
 
       <div className="mt-12">
-        <Tabs defaultValue="technical" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 p-1 bg-blue-50/70 dark:bg-gray-800 rounded-xl shadow-sm">
-            <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white dark:text-gray-300 dark:data-[state=active]:text-white">
+        <Tabs defaultValue="technical" className="w-full">          <TabsList className="grid w-full grid-cols-2 p-1 bg-blue-50 dark:bg-gray-800 rounded-xl shadow-sm border border-blue-100 dark:border-gray-700">
+            <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
               Compétences techniques
             </TabsTrigger>
-            <TabsTrigger value="soft" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white dark:text-gray-300 dark:data-[state=active]:text-white">
+            <TabsTrigger value="soft" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
               Compétences transversales
             </TabsTrigger>
           </TabsList>
           <TabsContent value="technical" className="mt-6">
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-blue-50/50 dark:bg-gray-700/50">
+            <div className="grid gap-6 md:grid-cols-2">              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
                       <Server className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <CardTitle>Administration système</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Administration système</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Configuration et maintenance de systèmes Windows, gestion des mises à jour
                       </CardDescription>
                     </div>
@@ -44,16 +42,15 @@ export default function Technologies() {
                   <SkillProgress name="GPO (Stratégies de groupe)" level={75} icon={Server} />
                   <SkillProgress name="WSUS" level={65} icon={Server} />
                 </CardContent>
-              </Card>
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-blue-50/50 dark:bg-gray-700/50">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
                       <Database className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <CardTitle>Applications métier</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Applications métier</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Outils de gestion des tickets et inventaires informatiques
                       </CardDescription>
                     </div>
@@ -65,16 +62,15 @@ export default function Technologies() {
                   <SkillProgress name="GLPI" level={80} icon={Database} />
                   <SkillProgress name="Microsoft Office" level={95} icon={Database} />
                 </CardContent>
-              </Card>
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-blue-50/50 dark:bg-gray-700/50">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
                       <Shield className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <CardTitle>Sécurité informatique</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Sécurité informatique</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Protection des systèmes et gestion des accès utilisateurs
                       </CardDescription>
                     </div>
@@ -86,16 +82,15 @@ export default function Technologies() {
                   <SkillProgress name="Politiques de mots de passe" level={75} icon={Shield} />
                   <SkillProgress name="Sensibilisation utilisateurs" level={70} icon={Shield} />
                 </CardContent>
-              </Card>
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-blue-50/50 dark:bg-gray-700/50">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
                       <Cloud className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
-                      <CardTitle>Services cloud</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Services cloud</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Gestion des services Microsoft 365 et Azure AD
                       </CardDescription>
                     </div>
@@ -111,16 +106,15 @@ export default function Technologies() {
             </div>
           </TabsContent>
           <TabsContent value="soft" className="mt-6">
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-yellow-50/50 dark:bg-yellow-900/30">
+            <div className="grid gap-6 md:grid-cols-2">              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
                       <Users className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
-                      <CardTitle>Communication</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Communication</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Capacités d'écoute et d'explication technique
                       </CardDescription>
                     </div>
@@ -132,16 +126,15 @@ export default function Technologies() {
                   <SkillProgress name="Rédaction de documentation" level={80} icon={Users} />
                   <SkillProgress name="Communication écrite" level={85} icon={Users} />
                 </CardContent>
-              </Card>
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-yellow-50/50 dark:bg-yellow-900/30">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
                       <Brain className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
-                      <CardTitle>Résolution de problèmes</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Résolution de problèmes</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Méthodes analytiques et approche structurée
                       </CardDescription>
                     </div>
@@ -153,16 +146,15 @@ export default function Technologies() {
                   <SkillProgress name="Recherche de solutions" level={90} icon={Brain} />
                   <SkillProgress name="Gestion de priorités" level={85} icon={Brain} />
                 </CardContent>
-              </Card>
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-yellow-50/50 dark:bg-yellow-900/30">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
                       <Clock className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
-                      <CardTitle>Organisation</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Organisation</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Gestion du temps et des tâches multiples
                       </CardDescription>
                     </div>
@@ -174,16 +166,15 @@ export default function Technologies() {
                   <SkillProgress name="Multitâche" level={80} icon={Clock} />
                   <SkillProgress name="Documentation des procédures" level={75} icon={Clock} />
                 </CardContent>
-              </Card>
-              <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
-                <CardHeader className="bg-yellow-50/50 dark:bg-yellow-900/30">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
                       <MessageSquare className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
-                      <CardTitle>Travail d'équipe</CardTitle>
-                      <CardDescription>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Travail d'équipe</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
                         Collaboration et partage de connaissances
                       </CardDescription>
                     </div>

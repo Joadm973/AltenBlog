@@ -13,7 +13,7 @@ export default function Learnings() {
       />
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold">Mon parcours d'apprentissage</h3>
+        <h3 className="mb-6 text-2xl font-bold text-gray-800 dark:text-white">Mon parcours d'apprentissage</h3>
         <div className="mt-8">
           <TimelineItem
             date="Semaine 1-2"

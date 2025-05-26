@@ -14,17 +14,17 @@ export default function Future() {
 
       <div className="mt-12 grid gap-8 md:grid-cols-2">
         <div className="space-y-6">
-          <p className="text-lg">
+          <p className="text-lg text-gray-800 dark:text-gray-200">
             Cette expérience chez ALTEN a été déterminante dans la construction de mon projet professionnel. Elle m'a
             permis de confirmer mon intérêt pour le domaine du support informatique tout en m'ouvrant à de nouvelles
             perspectives, notamment dans la gestion des technologies cloud et la transformation numérique.
           </p>
-          <p>
+          <p className="text-gray-800 dark:text-gray-300">
             J'ai pu identifier mes points forts, comme ma capacité à résoudre méthodiquement des problèmes techniques et
             à communiquer efficacement avec les utilisateurs. J'ai également pris conscience des domaines dans lesquels
             je souhaite me perfectionner, comme les technologies de déploiement cloud et la sécurité informatique.
           </p>
-          <p>
+          <p className="text-gray-800 dark:text-gray-300">
             Ce stage a renforcé ma conviction que je souhaite évoluer dans un environnement technique en constante
             évolution, où l'apprentissage continu est essentiel et où chaque jour apporte de nouveaux défis à relever.
           </p>
@@ -42,7 +42,7 @@ export default function Future() {
       </div>
 
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold gradient-heading">Impact sur mon parcours</h3>
+        <h3 className="mb-6 text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 dark:from-blue-400 dark:via-red-400 dark:to-yellow-400 bg-clip-text text-transparent">Impact sur mon parcours</h3>
         <div className="grid gap-6 md:grid-cols-3">
           <Card>
             <CardHeader>
