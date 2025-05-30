@@ -13,7 +13,7 @@ export default function Learnings() {
       />
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold text-slate-900">Mon parcours d'apprentissage</h3>
+        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100">Mon parcours d'apprentissage</h3>
         <div className="mt-8">
           <TimelineItem
             date="Semaine 1-2"
@@ -39,36 +39,32 @@ export default function Learnings() {
       </div>
 
       <div className="mt-16 grid gap-8 md:grid-cols-3">
-        <InfoCard title="Ce qui m'a marqué" icon={Lightbulb}>
-          <ul className="ml-6 list-disc space-y-2 text-slate-700">
+        <InfoCard title="Ce qui m'a marqué" icon={Lightbulb}>          <ul className="ml-6 list-disc space-y-2 text-slate-700 dark:text-gray-300">
             <li>L'importance cruciale du support informatique dans le fonctionnement quotidien de l'entreprise</li>
             <li>La diversité des problématiques rencontrées et la nécessité d'être polyvalent</li>
             <li>L'évolution constante des technologies et l'importance de la veille technologique</li>
           </ul>
         </InfoCard>
-        <InfoCard title="Ma plus grande réussite" icon={Award}>
-          <p className="mb-4 text-slate-700">
+        <InfoCard title="Ma plus grande réussite" icon={Award}>          <p className="mb-4 text-slate-700 dark:text-gray-300">
             La résolution d'un problème complexe lié à Intune qui bloquait le déploiement sur certains modèles
             d'ordinateurs.
           </p>
-          <p className="text-slate-700">
+          <p className="text-slate-700 dark:text-gray-300">
             Après plusieurs jours d'investigation, j'ai identifié un conflit entre les pilotes préinstallés et ceux
             déployés par Intune. J'ai développé une solution qui a permis de débloquer le projet et d'accélérer la
             transition vers cette nouvelle technologie.
           </p>
         </InfoCard>
-        <InfoCard title="Ce qui m'a surpris" icon={Zap}>
-          <ul className="ml-6 list-disc space-y-2 text-slate-700">
+        <InfoCard title="Ce qui m'a surpris" icon={Zap}>          <ul className="ml-6 list-disc space-y-2 text-slate-700 dark:text-gray-300">
             <li>La complexité de la gestion d'un parc informatique de grande taille</li>
             <li>L'importance des soft skills dans un métier technique comme le support informatique</li>
             <li>La rapidité avec laquelle j'ai pu monter en compétences grâce à l'accompagnement de l'équipe</li>
           </ul>
         </InfoCard>
       </div>
-      <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold text-slate-900">Une anecdote représentative</h3>
-        <div className="rounded-xl bg-white p-6 border-2 border-blue-200 shadow-md">
-          <p className="italic text-slate-800">
+      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100">Une anecdote représentative</h3>
+        <div className="rounded-xl bg-white dark:bg-gray-800 p-6 border-2 border-blue-200 dark:border-gray-700 shadow-md">
+          <p className="italic text-slate-800 dark:text-gray-200">
             Lors de ma troisième semaine de stage, j'ai reçu un ticket urgent d'un manager qui ne pouvait plus accéder à
             ses présentations importantes juste avant une réunion client. Malgré la pression, j'ai gardé mon calme et
             méthodiquement identifié que le problème venait d'une corruption du profil utilisateur. En utilisant les

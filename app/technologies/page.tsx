@@ -13,7 +13,7 @@ export default function Technologies() {
       />
 
       <div className="mt-12">
-        <Tabs defaultValue="technical" className="w-full">          <TabsList className="grid w-full grid-cols-2 p-1 bg-blue-50 dark:bg-gray-800 rounded-xl shadow-sm border border-blue-100 dark:border-gray-700">
+        <Tabs defaultValue="technical" className="w-full">          <TabsList className="grid w-full grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
             <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
               Compétences techniques
             </TabsTrigger>

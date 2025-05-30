@@ -4,34 +4,7 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
-    --primary: 217 91% 30%; /* ALTEN blue */
-    --primary-foreground: 0 0% 100%; /* Changed from 210 40% 98% */
-    --secondary: 0 0% 98%; /* Changed from 210 40% 96.1% */
-    --secondary-foreground: 222.2 84% 4.9%; /* Changed from 222.2 47.4% 11.2% */
-    --muted: 0 0% 98%; /* Changed from 210 40% 96.1% */
-    --muted-foreground: 215.4 16.3% 46.9%;
-    --accent: 0 0% 98%; /* Changed from 210 40% 96.1% */
-    --accent-foreground: 222.2 84% 4.9%; /* Changed from 222.2 47.4% 11.2% */
-    --destructive: 0 84.2% 60.2%;
-    --destructive-foreground: 0 0% 100%; /* Changed from 210 40% 98% */
-    --border: 214.3 31.8% 95%; /* Changed from 214.3 31.8% 91.4% */
-    --input: 214.3 31.8% 95%; /* Changed from 214.3 31.8% 91.4% */
-    --ring: 217 91% 30%; /* ALTEN blue */
-    --radius: 0.75rem;
-    
-    /* ALTEN specific colors */
-    --alten-red: 0 84% 50%;
-    --alten-blue: 217 91% 30%;
-    --alten-yellow: 48 100% 50%;
-  }
-
-  .dark {
+    /* Thème sombre permanent */
     --background: 222.2 84% 4.9%;
     --foreground: 210 40% 98%;
     --card: 222.2 84% 4.9%;
@@ -51,13 +24,12 @@
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
     --ring: 217 91% 60%; /* ALTEN blue (lighter for dark mode) */
+    --radius: 0.75rem;
     
-    /* ALTEN specific dark colors */
+    /* ALTEN specific colors */
     --alten-red: 0 84% 60%;
     --alten-blue: 217 91% 60%;
     --alten-yellow: 48 100% 60%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 217 91% 60%; /* ALTEN blue (lighter for dark mode) */
   }
 }
 
@@ -69,6 +41,8 @@
     @apply bg-background text-foreground;
   }
 }
+
+/* Classes de test pour le thème - À SUPPRIMER */
 
 @layer components {
   .gradient-heading {

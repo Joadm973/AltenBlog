@@ -9,11 +9,9 @@ export default function MyRole() {
       <SectionHeader
         title="Dans les coulisses du Support Informatique"
         description="Découvrez mon rôle et mes missions principales au sein du service Support Informatique d'ALTEN."
-      />
-
-      <div className="mt-12 space-y-6 p-6 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-600/80 dark:to-indigo-800/80 border border-blue-200 dark:border-transparent shadow-lg">
-        <h3 className="text-2xl font-bold text-gray-800 dark:text-white">Description de mon rôle</h3>
-        <p className="text-lg text-gray-800 dark:text-white">
+      />      <div className="mt-12 space-y-6 p-6 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg">
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Description de mon rôle</h3>
+        <p className="text-lg text-gray-800 dark:text-gray-200">
           Durant ce stage au sein du service Support Informatique d'ALTEN, j'ai occupé le poste de Technicien Support
           Informatique N1/N2. Ma mission principale consistait à assurer un support technique de qualité aux
           collaborateurs de l'entreprise, afin de garantir la continuité de service et de minimiser l'impact des
@@ -22,7 +20,7 @@ export default function MyRole() {
       </div>
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold text-gray-800 dark:text-white bg-gradient-to-r from-blue-50 to-blue-100 dark:from-blue-600 dark:to-indigo-700 border border-blue-200 dark:border-transparent p-4 rounded-xl inline-block">Mes missions principales</h3>
+        <h3 className="mb-6 text-2xl font-bold text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 rounded-xl inline-block">Mes missions principales</h3>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <MissionCard
             title="Gestion des tickets MySupport"

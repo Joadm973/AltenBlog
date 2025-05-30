@@ -3,7 +3,6 @@ import type { Metadata } from "next"
 import { Mona_Sans as FontSans } from "next/font/google"
 import "./globals.css"
 import { cn } from "@/lib/utils"
-import { ThemeProvider } from "@/components/theme-provider"
 import Navbar from "@/components/navbar"
 import Footer from "@/components/footer"
 
@@ -24,15 +23,13 @@ export default function RootLayout({
   children: React.ReactNode
 }>) {
   return (
-    <html lang="fr" suppressHydrationWarning>
-      <body className={cn("min-h-screen bg-background text-foreground font-sans antialiased", fontSans.variable)}>
-        <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
-          <div className="flex min-h-screen flex-col">
-            <Navbar />
-            <main className="flex-1 w-full max-w-8xl mx-auto px-4">{children}</main>
-            <Footer />
-          </div>
-        </ThemeProvider>
+    <html lang="fr" suppressHydrationWarning className="dark">
+      <body className={cn("min-h-screen bg-gray-900 text-gray-100 font-sans antialiased", fontSans.variable)}>
+        <div className="flex min-h-screen flex-col">
+          <Navbar />
+          <main className="flex-1 w-full max-w-8xl mx-auto px-4">{children}</main>
+          <Footer />
+        </div>
       </body>
     </html>
   )
