@@ -13,7 +13,7 @@ export default function Learnings() {
       />
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold text-gray-800 dark:text-white">Mon parcours d'apprentissage</h3>
+        <h3 className="mb-6 text-2xl font-bold text-slate-900">Mon parcours d'apprentissage</h3>
         <div className="mt-8">
           <TimelineItem
             date="Semaine 1-2"
@@ -40,54 +40,54 @@ export default function Learnings() {
 
       <div className="mt-16 grid gap-8 md:grid-cols-3">
         <InfoCard title="Ce qui m'a marqué" icon={Lightbulb}>
-          <ul className="ml-6 list-disc space-y-2">
+          <ul className="ml-6 list-disc space-y-2 text-slate-700">
             <li>L'importance cruciale du support informatique dans le fonctionnement quotidien de l'entreprise</li>
             <li>La diversité des problématiques rencontrées et la nécessité d'être polyvalent</li>
             <li>L'évolution constante des technologies et l'importance de la veille technologique</li>
           </ul>
         </InfoCard>
         <InfoCard title="Ma plus grande réussite" icon={Award}>
-          <p className="mb-4">
+          <p className="mb-4 text-slate-700">
             La résolution d'un problème complexe lié à Intune qui bloquait le déploiement sur certains modèles
             d'ordinateurs.
           </p>
-          <p>
+          <p className="text-slate-700">
             Après plusieurs jours d'investigation, j'ai identifié un conflit entre les pilotes préinstallés et ceux
             déployés par Intune. J'ai développé une solution qui a permis de débloquer le projet et d'accélérer la
             transition vers cette nouvelle technologie.
           </p>
         </InfoCard>
         <InfoCard title="Ce qui m'a surpris" icon={Zap}>
-          <ul className="ml-6 list-disc space-y-2">
+          <ul className="ml-6 list-disc space-y-2 text-slate-700">
             <li>La complexité de la gestion d'un parc informatique de grande taille</li>
             <li>L'importance des soft skills dans un métier technique comme le support informatique</li>
             <li>La rapidité avec laquelle j'ai pu monter en compétences grâce à l'accompagnement de l'équipe</li>
           </ul>
         </InfoCard>
-      </div>        <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold dark:text-gray-100">Une anecdote représentative</h3>
-        <div className="rounded-xl bg-muted/50 dark:bg-gray-800/70 p-6 border border-blue-50 dark:border-blue-900/30 shadow-sm">
-          <p className="italic dark:text-gray-200">
+      </div>
+      <div className="mt-16">
+        <h3 className="mb-6 text-2xl font-bold text-slate-900">Une anecdote représentative</h3>
+        <div className="rounded-xl bg-white p-6 border-2 border-blue-200 shadow-md">
+          <p className="italic text-slate-800">
             Lors de ma troisième semaine de stage, j'ai reçu un ticket urgent d'un manager qui ne pouvait plus accéder à
             ses présentations importantes juste avant une réunion client. Malgré la pression, j'ai gardé mon calme et
             méthodiquement identifié que le problème venait d'une corruption du profil utilisateur. En utilisant les
             outils à ma disposition et en suivant les procédures, j'ai pu restaurer l'accès à ses fichiers en moins de
             30 minutes, juste à temps pour sa présentation.
           </p>
-          <p className="mt-4 italic dark:text-gray-200">
+          <p className="mt-4 italic text-slate-800">
             Cette expérience m'a montré l'importance de rester méthodique sous pression et la satisfaction que procure
             la résolution d'un problème critique pour un utilisateur. Le manager m'a personnellement remercié, ce qui a
             été très gratifiant.
           </p>
         </div>
       </div>
-
       <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold dark:text-gray-100">Compétences développées</h3>
+        <h3 className="mb-6 text-2xl font-bold text-slate-900">Compétences développées</h3>
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="space-y-4 rounded-xl bg-muted/50 dark:bg-gray-800/70 p-6 border border-blue-50 dark:border-blue-900/30 shadow-sm">
-            <h4 className="font-semibold dark:text-blue-300">Compétences techniques</h4>
-            <ul className="ml-6 list-disc space-y-2 dark:text-gray-300">
+          <div className="space-y-4 rounded-xl bg-white p-6 border-2 border-blue-200 shadow-md">
+            <h4 className="font-semibold text-blue-800">Compétences techniques</h4>
+            <ul className="ml-6 list-disc space-y-2 text-slate-700">
               <li>Maîtrise approfondie de ServiceNow pour la gestion des tickets</li>
               <li>Configuration et déploiement via SCCM</li>
               <li>Compréhension des mécanismes d'Intune et Autopilot</li>
@@ -95,9 +95,9 @@ export default function Learnings() {
               <li>Documentation technique claire et précise</li>
             </ul>
           </div>
-          <div className="space-y-4 rounded-xl bg-muted/50 dark:bg-gray-800/70 p-6 border border-blue-50 dark:border-blue-900/30 shadow-sm">
-            <h4 className="font-semibold dark:text-blue-300">Compétences transversales</h4>
-            <ul className="ml-6 list-disc space-y-2 dark:text-gray-300">
+          <div className="space-y-4 rounded-xl bg-white p-6 border-2 border-blue-200 shadow-md">
+            <h4 className="font-semibold text-blue-800">Compétences transversales</h4>
+            <ul className="ml-6 list-disc space-y-2 text-slate-700">
               <li>Communication adaptée aux différents profils d'utilisateurs</li>
               <li>Gestion efficace des priorités en situation de forte charge</li>
               <li>Résolution méthodique de problèmes complexes</li>
