@@ -62,9 +62,8 @@ export default function Home() {
                     height={64}
                     className="rounded-full object-cover"
                   />
-                </div>
-                <div className="mt-4 text-center">
-                  <p className="font-medium text-blue-300">Stage effectué de juin à août 2024</p>
+                </div>                <div className="mt-4 text-center">
+                  <p className="font-medium text-blue-300">Stage effectué de mars à juin 2025</p>
                   <p className="text-sm text-slate-300 mt-1">
                     Une expérience enrichissante dans le domaine du support informatique
                   </p>

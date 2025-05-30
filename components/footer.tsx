@@ -13,10 +13,9 @@ export default function Footer() {  return (
             height={53}
             className="object-contain"
           />
-          <div className="h-10 w-px bg-gradient-to-b from-blue-200 to-red-200 mx-2"></div>
-          <div className="text-sm">
-            <p className="font-medium text-blue-400">Stage effectué de juin à août 2024</p>            <p className="text-gray-400">
-              Un grand merci à ALTEN et à mon tuteur pour cette opportunité enrichissante.
+          <div className="h-10 w-px bg-gradient-to-b from-blue-200 to-red-200 mx-2"></div>          <div className="text-sm">
+            <p className="font-medium text-blue-400">Stage effectué de mars à juin 2025</p>            <p className="text-gray-400">
+              Un grand merci à ALTEN, l'équipe du support technique et à mon tuteur pour cette opportunité enrichissante.
             </p>
           </div>
         </div>

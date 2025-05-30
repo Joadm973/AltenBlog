@@ -2,7 +2,7 @@ import SectionHeader from "@/components/section-header"
 import TimelineItem from "@/components/timeline-item"
 import InfoCard from "@/components/info-card"
 import QuoteCard from "@/components/quote-card"
-import { Award, Lightbulb, Zap } from "lucide-react"
+import { Lightbulb, Zap } from "lucide-react"
 
 export default function Learnings() {
   return (
@@ -23,37 +23,24 @@ export default function Learnings() {
           <TimelineItem
             date="Semaine 3-4"
             title="Autonomie progressive"
-            description="Traitement autonome des tickets de niveau 1. Apprentissage des techniques de masterisation avec SCCM."
+            description="Traitement autonome des tickets de niveau 1. Apprentissage des techniques de masterisation."
           />
           <TimelineItem
             date="Semaine 5-6"
             title="Montée en compétences"
             description="Gestion de tickets plus complexes (niveau 2). Participation active au projet de transition vers Intune/Autopilot."
-          />
-          <TimelineItem
+          />          <TimelineItem
             date="Semaine 7-8"
-            title="Expertise et contribution"
-            description="Résolution d'un problème majeur lié à Intune. Documentation des procédures pour faciliter la transition technologique."
+            title="Autonomie complète"
+            description="Gestion autonome des incidents critiques sans supervision. Mise en place de procédures personnalisées pour optimiser la résolution des problèmes récurrents."
           />
         </div>
-      </div>
-
-      <div className="mt-16 grid gap-8 md:grid-cols-3">
+      </div>      <div className="mt-16 grid gap-8 md:grid-cols-2">
         <InfoCard title="Ce qui m'a marqué" icon={Lightbulb}>          <ul className="ml-6 list-disc space-y-2 text-slate-700 dark:text-gray-300">
             <li>L'importance cruciale du support informatique dans le fonctionnement quotidien de l'entreprise</li>
             <li>La diversité des problématiques rencontrées et la nécessité d'être polyvalent</li>
             <li>L'évolution constante des technologies et l'importance de la veille technologique</li>
           </ul>
-        </InfoCard>
-        <InfoCard title="Ma plus grande réussite" icon={Award}>          <p className="mb-4 text-slate-700 dark:text-gray-300">
-            La résolution d'un problème complexe lié à Intune qui bloquait le déploiement sur certains modèles
-            d'ordinateurs.
-          </p>
-          <p className="text-slate-700 dark:text-gray-300">
-            Après plusieurs jours d'investigation, j'ai identifié un conflit entre les pilotes préinstallés et ceux
-            déployés par Intune. J'ai développé une solution qui a permis de débloquer le projet et d'accélérer la
-            transition vers cette nouvelle technologie.
-          </p>
         </InfoCard>
         <InfoCard title="Ce qui m'a surpris" icon={Zap}>          <ul className="ml-6 list-disc space-y-2 text-slate-700 dark:text-gray-300">
             <li>La complexité de la gestion d'un parc informatique de grande taille</li>
@@ -61,50 +48,26 @@ export default function Learnings() {
             <li>La rapidité avec laquelle j'ai pu monter en compétences grâce à l'accompagnement de l'équipe</li>
           </ul>
         </InfoCard>
-      </div>
-      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100">Une anecdote représentative</h3>
+      </div>      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100">Une anecdote représentative</h3>
         <div className="rounded-xl bg-white dark:bg-gray-800 p-6 border-2 border-blue-200 dark:border-gray-700 shadow-md">
           <p className="italic text-slate-800 dark:text-gray-200">
-            Lors de ma troisième semaine de stage, j'ai reçu un ticket urgent d'un manager qui ne pouvait plus accéder à
-            ses présentations importantes juste avant une réunion client. Malgré la pression, j'ai gardé mon calme et
-            méthodiquement identifié que le problème venait d'une corruption du profil utilisateur. En utilisant les
-            outils à ma disposition et en suivant les procédures, j'ai pu restaurer l'accès à ses fichiers en moins de
-            30 minutes, juste à temps pour sa présentation.
+            Lors d'une journée particulièrement chargée, notre équipe a été confrontée à un afflux massif de tickets urgents 
+            avec des problèmes de connexion pour plusieurs départements. 
+            Face à cette situation critique, nous avons immédiatement mis en place une stratégie de répartition des tâches 
+            basée sur les compétences de chacun.
           </p>
-          <p className="mt-4 italic text-slate-800">
-            Cette expérience m'a montré l'importance de rester méthodique sous pression et la satisfaction que procure
-            la résolution d'un problème critique pour un utilisateur. Le manager m'a personnellement remercié, ce qui a
-            été très gratifiant.
+          <p className="mt-4 italic text-slate-800 dark:text-gray-200">
+            Grâce à l'esprit d'équipe et une communication fluide entre les membres, nous avons pu traiter méthodiquement 
+            chaque ticket par ordre de priorité. J'ai été impressionné par notre capacité collective à rester calmes sous pression 
+            et à nous entraider lorsque l'un d'entre nous rencontrait une difficulté technique particulière.
+          </p>
+          <p className="mt-4 italic text-slate-800 dark:text-gray-200">
+            Cette expérience m'a démontré que grâce à l'esprit d'équipe, nous pouvions gérer efficacement un grand nombre de 
+            tickets urgents et les traiter à temps, même dans les situations les plus tendues. La satisfaction des utilisateurs 
+            et les remerciements de notre responsable ont confirmé l'importance de cette collaboration.
           </p>
         </div>
-      </div>
-      <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold text-slate-900">Compétences développées</h3>
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="space-y-4 rounded-xl bg-white p-6 border-2 border-blue-200 shadow-md">
-            <h4 className="font-semibold text-blue-800">Compétences techniques</h4>
-            <ul className="ml-6 list-disc space-y-2 text-slate-700">
-              <li>Maîtrise approfondie de ServiceNow pour la gestion des tickets</li>
-              <li>Configuration et déploiement via SCCM</li>
-              <li>Compréhension des mécanismes d'Intune et Autopilot</li>
-              <li>Gestion des droits utilisateurs dans Active Directory</li>
-              <li>Documentation technique claire et précise</li>
-            </ul>
-          </div>
-          <div className="space-y-4 rounded-xl bg-white p-6 border-2 border-blue-200 shadow-md">
-            <h4 className="font-semibold text-blue-800">Compétences transversales</h4>
-            <ul className="ml-6 list-disc space-y-2 text-slate-700">
-              <li>Communication adaptée aux différents profils d'utilisateurs</li>
-              <li>Gestion efficace des priorités en situation de forte charge</li>
-              <li>Résolution méthodique de problèmes complexes</li>
-              <li>Autonomie dans la recherche de solutions</li>
-              <li>Travail collaboratif au sein d'une équipe technique</li>
-            </ul>
-          </div>
-        </div>
-      </div>
-
-      <div className="mt-16">
+      </div><div className="mt-16">
         <QuoteCard quote="Ce stage m'a permis de confronter mes connaissances théoriques à la réalité du terrain. J'ai découvert que la technique n'est qu'une partie du métier, et que la communication et la méthodologie sont tout aussi importantes pour réussir dans le support informatique." />
       </div>
     </div>
