@@ -3,18 +3,17 @@ import Link from "next/link"
 import HeroSection from "@/components/hero-section"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
-import { ChevronRight } from "lucide-react"
+import { ChevronRight, Calendar } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="flex flex-col">
-      <HeroSection
-        title={<span className="gradient-heading">Mon expérience en Support Informatique chez ALTEN</span>}
-        description="Découvrez mon parcours de 8 semaines en tant que Technicien Support Informatique N1/N2 au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
+    <div className="flex flex-col">      <HeroSection
+        title={<span className="gradient-heading">Mon expérience au Support Informatique chez ALTEN</span>}
+        description="Découvrez mon parcours de 8 semaines en tant que Technicien Support Informatique au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
         imageSrc="/support-informatique.jpg"
         imageAlt="Bureau moderne avec des écrans d'ordinateur représentant le support informatique"
         primaryButtonText="Découvrir mon expérience"
-        primaryButtonHref="/about-alten"
+        primaryButtonHref="/my-role"
         isAnimated={true}
       />
 
@@ -28,7 +27,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-5xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
             <SectionCard
               title="ALTEN"
               description="Découvrez ce leader mondial de l'ingénierie et des IT Services"
@@ -54,18 +53,12 @@ export default function Home() {
               description="L'impact de cette expérience sur mon projet professionnel"
               href="/future"
             />            <Card className="flex h-full flex-col justify-between overflow-hidden border border-blue-900/40 bg-gradient-to-br from-gray-800 to-blue-900/10 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-[1.02] transition-all">
-              <CardContent className="flex flex-col items-center justify-center p-6">
-                <div className="aspect-square w-16 rounded-full bg-gradient-to-r p-1 from-blue-400 via-red-400 to-yellow-400">
-                  <Image
-                    src="/placeholder.svg?height=64&width=64"
-                    alt="Photo de profil"
-                    width={64}
-                    height={64}
-                    className="rounded-full object-cover"
-                  />
-                </div>                <div className="mt-4 text-center">
-                  <p className="font-medium text-blue-300">Stage effectué de mars à juin 2025</p>
-                  <p className="text-sm text-slate-300 mt-1">
+              <CardContent className="flex flex-col items-center justify-center p-10">
+                <div className="aspect-square w-40 rounded-full bg-gradient-to-r p-3 from-blue-400 via-red-400 to-yellow-400 shadow-2xl flex items-center justify-center">
+                  <Calendar className="w-20 h-20 text-white" />
+                </div>                <div className="mt-8 text-center">
+                  <p className="font-medium text-blue-300 text-xl">Stage effectué de mars à juin 2025</p>
+                  <p className="text-lg text-slate-300 mt-3">
                     Une expérience enrichissante dans le domaine du support informatique
                   </p>
                 </div>

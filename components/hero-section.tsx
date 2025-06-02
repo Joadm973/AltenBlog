@@ -50,10 +50,9 @@ export default function HeroSection({
               {description}
             </p>
             {(primaryButtonText || secondaryButtonText) && (
-              <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">
-                {primaryButtonText && primaryButtonHref && (
+              <div className="flex flex-col gap-2 min-[400px]:flex-row mt-4">                {primaryButtonText && primaryButtonHref && (
                   <Link href={primaryButtonHref}>
-                    <Button className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 shadow-lg transition-all hover:shadow-xl hover:shadow-blue-400/30 hover:scale-105" size="lg">{primaryButtonText}</Button>
+                    <Button className="bg-gradient-to-r from-blue-600 to-indigo-700 hover:from-blue-700 hover:to-indigo-800 shadow-lg transition-all hover:shadow-xl hover:shadow-blue-400/30 hover:scale-105 text-lg px-8 py-4 h-auto" size="lg">{primaryButtonText}</Button>
                   </Link>
                 )}
                 {secondaryButtonText && secondaryButtonHref && (
