@@ -11,7 +11,7 @@ export default function Home() {
       <HeroSection
         title={<span className="gradient-heading">Mon expérience en Support Informatique chez ALTEN</span>}
         description="Découvrez mon parcours de 8 semaines en tant que Technicien Support Informatique N1/N2 au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
-        imageSrc="/placeholder.svg?height=600&width=800"
+        imageSrc="/support-informatique.jpg"
         imageAlt="Bureau moderne avec des écrans d'ordinateur représentant le support informatique"
         primaryButtonText="Découvrir mon expérience"
         primaryButtonHref="/about-alten"
@@ -21,7 +21,8 @@ export default function Home() {
       <section className="w-full py-12 md:py-24 bg-gradient-to-b from-gray-900 via-blue-900/10 to-gray-900 relative overflow-hidden flex items-center justify-center">
         <div className="container max-w-8xl mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-4xl mx-auto">
-            <div className="space-y-2">              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-100">Explorez mon parcours</h2>
+            <div className="space-y-2">
+              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-100">Explorez mon parcours</h2>
               <p className="max-w-[900px] text-slate-300 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed">
                 Découvrez les différentes facettes de mon stage chez ALTEN à travers ces sections
               </p>
