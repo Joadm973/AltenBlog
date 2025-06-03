@@ -41,10 +41,9 @@ export default function Future() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 dark:from-blue-400 dark:via-red-400 dark:to-yellow-400 bg-clip-text text-transparent">Impact sur mon parcours</h3>
+      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold bg-gradient-to-r from-blue-800 via-blue-700 to-blue-600 dark:from-blue-400 dark:via-red-400 dark:to-yellow-400 bg-clip-text text-transparent transition-all duration-elegant">Impact sur mon parcours</h3>
         <div className="grid gap-6 md:grid-cols-3">
-          <Card>
+          <Card className="card-ultra-smooth hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02] hover:-translate-y-2">
             <CardHeader>
               <CardTitle>Pour ma formation</CardTitle>
             </CardHeader>
@@ -55,8 +54,7 @@ export default function Future() {
                 technologies cloud et la gestion de parc informatique.
               </p>
             </CardContent>
-          </Card>
-          <Card>
+          </Card>          <Card className="card-ultra-smooth hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02] hover:-translate-y-2">
             <CardHeader>
               <CardTitle>Pour mon prochain stage</CardTitle>
             </CardHeader>
@@ -67,8 +65,7 @@ export default function Future() {
                 projets IT.
               </p>
             </CardContent>
-          </Card>
-          <Card>
+          </Card>          <Card className="card-ultra-smooth hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.02] hover:-translate-y-2">
             <CardHeader>
               <CardTitle>Pour mon insertion professionnelle</CardTitle>
             </CardHeader>
@@ -83,11 +80,10 @@ export default function Future() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold gradient-heading">Ce que je recherche maintenant</h3>
+      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold gradient-heading transition-all duration-elegant">Ce que je recherche maintenant</h3>
         <div className="space-y-6">
-          <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md">
+          <div className="flex items-start gap-4 transition-all duration-elegant hover:translate-x-2 hover:scale-[1.01] p-4 rounded-xl hover:bg-blue-50/50 dark:hover:bg-blue-900/20">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md transition-all duration-elegant hover:scale-110 hover:rotate-6">
               <ArrowRight className="h-5 w-5" />
             </div>
             <div>
@@ -95,11 +91,10 @@ export default function Future() {
               <p className="text-muted-foreground dark:text-gray-300">
                 Je souhaite me spécialiser davantage dans les solutions de gestion cloud comme Microsoft Intune, Azure
                 AD et les technologies de déploiement modernes.
-              </p>
-            </div>
+              </p>            </div>
           </div>
-          <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md">
+          <div className="flex items-start gap-4 transition-all duration-elegant hover:translate-x-2 hover:scale-[1.01] p-4 rounded-xl hover:bg-blue-50/50 dark:hover:bg-blue-900/20">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md transition-all duration-elegant hover:scale-110 hover:rotate-6">
               <ArrowRight className="h-5 w-5" />
             </div>
             <div>
@@ -107,11 +102,10 @@ export default function Future() {
               <p className="text-muted-foreground dark:text-gray-300">
                 L'automatisation des tâches répétitives est un enjeu majeur pour les équipes support. Je souhaite
                 développer des compétences en scripting (PowerShell) et en automatisation des processus.
-              </p>
-            </div>
+              </p>            </div>
           </div>
-          <div className="flex items-start gap-4">
-            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md">
+          <div className="flex items-start gap-4 transition-all duration-elegant hover:translate-x-2 hover:scale-[1.01] p-4 rounded-xl hover:bg-blue-50/50 dark:hover:bg-blue-900/20">
+            <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-gradient-to-r from-blue-600 to-blue-700 dark:from-blue-500 dark:to-blue-600 text-white shadow-md transition-all duration-elegant hover:scale-110 hover:rotate-6">
               <ArrowRight className="h-5 w-5" />
             </div>
             <div>

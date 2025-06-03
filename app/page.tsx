@@ -52,13 +52,13 @@ export default function Home() {
               title="Et Après?"
               description="L'impact de cette expérience sur mon projet professionnel"
               href="/future"
-            />            <Card className="flex h-full flex-col justify-between overflow-hidden border border-blue-900/40 bg-gradient-to-br from-gray-800 to-blue-900/10 hover:shadow-lg hover:shadow-blue-400/30 hover:scale-[1.02] transition-all">
+            />            <Card className="flex h-full flex-col justify-between overflow-hidden border border-blue-900/40 bg-gradient-to-br from-gray-800 to-blue-900/10 hover:shadow-xl hover:shadow-blue-400/30 hover:scale-[1.03] hover:-translate-y-2 transition-all duration-gentle ease-elegant card-ultra-smooth">
               <CardContent className="flex flex-col items-center justify-center p-10">
-                <div className="aspect-square w-40 rounded-full bg-gradient-to-r p-3 from-blue-400 via-red-400 to-yellow-400 shadow-2xl flex items-center justify-center">
-                  <Calendar className="w-20 h-20 text-white" />
+                <div className="aspect-square w-40 rounded-full bg-gradient-to-r p-3 from-blue-400 via-red-400 to-yellow-400 shadow-2xl flex items-center justify-center transition-all duration-gentle ease-elegant hover:scale-110 hover:rotate-3">
+                  <Calendar className="w-20 h-20 text-white transition-all duration-gentle ease-elegant" />
                 </div>                <div className="mt-8 text-center">
-                  <p className="font-medium text-blue-300 text-xl">Stage effectué de mars à juin 2025</p>
-                  <p className="text-lg text-slate-300 mt-3">
+                  <p className="font-medium text-blue-300 text-xl transition-colors duration-gentle ease-elegant">Stage effectué de mars à juin 2025</p>
+                  <p className="text-lg text-slate-300 mt-3 transition-colors duration-gentle ease-elegant">
                     Une expérience enrichissante dans le domaine du support informatique
                   </p>
                 </div>
@@ -79,17 +79,17 @@ interface SectionCardProps {
 
 function SectionCard({ title, description, href }: SectionCardProps) {
   return (
-    <Card className="flex h-full flex-col justify-between overflow-hidden transition-all hover:shadow-lg hover:shadow-blue-400/30 border border-blue-900/40 bg-gradient-to-br from-gray-800 to-blue-900/10 hover:scale-[1.02]">
+    <Card className="flex h-full flex-col justify-between overflow-hidden transition-all duration-gentle ease-elegant hover:shadow-xl hover:shadow-blue-400/30 border border-blue-900/40 bg-gradient-to-br from-gray-800 to-blue-900/10 hover:scale-[1.03] hover:-translate-y-3 card-ultra-smooth">
       <CardContent className="flex flex-col justify-between p-6">
         <div className="space-y-3">
-          <h3 className="font-bold text-lg text-blue-300">{title}</h3>
-          <p className="text-sm text-slate-300 leading-relaxed">{description}</p>
+          <h3 className="font-bold text-lg text-blue-300 transition-colors duration-gentle ease-elegant">{title}</h3>
+          <p className="text-sm text-slate-300 leading-relaxed transition-colors duration-gentle ease-elegant">{description}</p>
         </div>
         <div className="pt-4">
           <Link href={href}>
-            <Button variant="ghost" className="gap-1 p-0 font-medium text-blue-400 hover:text-blue-300 transition-colors">
+            <Button variant="ghost" className="gap-1 p-0 font-medium text-blue-400 hover:text-blue-300 transition-all duration-gentle ease-elegant hover:gap-3 hover:translate-x-2">
               En savoir plus
-              <ChevronRight className="h-4 w-4" />
+              <ChevronRight className="h-4 w-4 transition-transform duration-gentle ease-elegant group-hover:translate-x-1" />
             </Button>
           </Link>
         </div>

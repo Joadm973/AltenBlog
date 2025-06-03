@@ -13,7 +13,7 @@ export default function Learnings() {
       />
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100">Mon parcours d'apprentissage</h3>
+        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100 transition-colors duration-elegant">Mon parcours d'apprentissage</h3>
         <div className="mt-8">
           <TimelineItem
             date="Semaine 1-2"
@@ -48,8 +48,8 @@ export default function Learnings() {
             <li>La rapidité avec laquelle j'ai pu monter en compétences grâce à l'accompagnement de l'équipe</li>
           </ul>
         </InfoCard>
-      </div>      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100">Une anecdote représentative</h3>
-        <div className="rounded-xl bg-white dark:bg-gray-800 p-6 border-2 border-blue-200 dark:border-gray-700 shadow-md">
+      </div>      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100 transition-colors duration-elegant">Une anecdote représentative</h3>
+        <div className="rounded-xl bg-white dark:bg-gray-800 p-6 border-2 border-blue-200 dark:border-gray-700 shadow-md transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.01] hover:-translate-y-1">
           <p className="italic text-slate-800 dark:text-gray-200">
             Lors d'une journée particulièrement chargée, notre équipe a été confrontée à un afflux massif de tickets urgents 
             avec des problèmes de connexion pour plusieurs départements. 

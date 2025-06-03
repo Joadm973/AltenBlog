@@ -9,7 +9,7 @@ export default function MyRole() {
       <SectionHeader
         title="Dans les coulisses du Support Informatique"
         description="Découvrez mon rôle et mes missions principales au sein du service Support Informatique d'ALTEN."
-      />      <div className="mt-12 space-y-6 p-6 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg">
+      />      <div className="mt-12 space-y-6 p-6 rounded-xl bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 shadow-lg transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/10 dark:hover:shadow-blue-400/10 hover:-translate-y-1">
         <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Description de mon rôle</h3>
         <p className="text-lg text-gray-800 dark:text-gray-200">
           Durant ce stage au sein du service Support Informatique d'ALTEN, j'ai occupé le poste de Technicien Support
@@ -20,7 +20,7 @@ export default function MyRole() {
       </div>
 
       <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 rounded-xl inline-block">Mes missions principales</h3>
+        <h3 className="mb-6 text-2xl font-bold text-gray-800 dark:text-gray-100 bg-gray-50 dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-4 rounded-xl inline-block transition-all duration-elegant hover:shadow-md hover:scale-[1.02]">Mes missions principales</h3>
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-4">
           <MissionCard
             title="Gestion des tickets MySupport"
@@ -69,10 +69,9 @@ export default function MyRole() {
         </div>
       </div>
 
-      <div className="mt-16">
-        <h3 className="mb-6 text-2xl font-bold text-white dark:text-white bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-500 dark:to-indigo-600 p-4 rounded-xl inline-block">Outils, méthodes et savoir-faire utilisés</h3>
+      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-white dark:text-white bg-gradient-to-r from-blue-600 to-indigo-700 dark:from-blue-500 dark:to-indigo-600 p-4 rounded-xl inline-block transition-all duration-elegant hover:shadow-lg hover:scale-[1.02]">Outils, méthodes et savoir-faire utilisés</h3>
         <div className="grid gap-6 md:grid-cols-2">
-          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 p-6 shadow-lg">
+          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 p-6 shadow-lg transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/30 dark:hover:shadow-blue-400/30 hover:scale-[1.02] hover:-translate-y-2">
             <h4 className="font-semibold text-white dark:text-white">Outils techniques</h4>
             <ul className="ml-6 list-disc space-y-2 text-white dark:text-white">
               <li>ServiceNow (MySupport) : Outil de ticketing pour la gestion des incidents</li>
@@ -82,8 +81,7 @@ export default function MyRole() {
               <li>Office 365 : Pour la gestion des licences et la documentation</li>
               <li>McAfee : Pour la mise à jour et la vérification des solutions antivirus</li>
             </ul>
-          </div>
-          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 p-6 shadow-lg">
+          </div>          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-600/80 to-indigo-700/80 dark:from-blue-600/80 dark:to-indigo-800/80 p-6 shadow-lg transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/30 dark:hover:shadow-blue-400/30 hover:scale-[1.02] hover:-translate-y-2">
             <h4 className="font-semibold text-white dark:text-white">Méthodologies et processus</h4>
             <ul className="ml-6 list-disc space-y-2 text-white dark:text-white">
               <li>Méthodologie ITIL : Pour la gestion des incidents et des demandes</li>

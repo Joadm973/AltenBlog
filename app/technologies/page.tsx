@@ -13,21 +13,19 @@ export default function Technologies() {
       />
 
       <div className="mt-12">
-        <Tabs defaultValue="technical" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
-            <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
+        <Tabs defaultValue="technical" className="w-full">          <TabsList className="grid w-full grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700 transition-all duration-gentle">
+            <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white transition-all duration-elegant hover:scale-[1.02] hover:shadow-md">
               Compétences techniques
             </TabsTrigger>
-            <TabsTrigger value="soft" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
+            <TabsTrigger value="soft" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white transition-all duration-elegant hover:scale-[1.02] hover:shadow-md">
               Compétences transversales
             </TabsTrigger>
-          </TabsList>
-          <TabsContent value="technical" className="mt-6">
+          </TabsList>          <TabsContent value="technical" className="mt-6">
             <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Server className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
@@ -60,12 +58,10 @@ export default function Technologies() {
                     icon={Server} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Database className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
@@ -98,12 +94,10 @@ export default function Technologies() {
                     icon={Database} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Shield className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
@@ -136,12 +130,10 @@ export default function Technologies() {
                     icon={Shield} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Cloud className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                     </div>
                     <div>
@@ -176,13 +168,12 @@ export default function Technologies() {
                 </CardContent>
               </Card>
             </div>
-          </TabsContent>
-          <TabsContent value="soft" className="mt-6">
+          </TabsContent>          <TabsContent value="soft" className="mt-6">
             <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-yellow-500/20 dark:hover:shadow-yellow-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Users className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
@@ -215,12 +206,10 @@ export default function Technologies() {
                     icon={Users} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-yellow-500/20 dark:hover:shadow-yellow-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Brain className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
@@ -253,12 +242,10 @@ export default function Technologies() {
                     icon={Brain} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-yellow-500/20 dark:hover:shadow-yellow-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <Clock className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
@@ -291,12 +278,10 @@ export default function Technologies() {
                     icon={Clock} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="card-ultra-smooth border border-blue-200 dark:border-gray-700 hover:shadow-xl hover:shadow-yellow-500/20 dark:hover:shadow-yellow-400/20 bg-white dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
-                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                       <MessageSquare className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
                     </div>
                     <div>
@@ -339,12 +324,11 @@ export default function Technologies() {
         <SectionHeader
           title="Méthodologies"
           description="Les approches et cadres professionnels que j'ai utilisés au quotidien."
-        />
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
+        />        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card className="card-ultra-smooth border border-blue-100 dark:border-gray-700 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/40">
+                <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/40 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                   <FileText className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <CardTitle>ITIL</CardTitle>
@@ -354,10 +338,10 @@ export default function Technologies() {
               <p className="dark:text-gray-300">J'ai appliqué les principes ITIL (Information Technology Infrastructure Library) dans la gestion des incidents et la résolution des problèmes informatiques. Cette méthodologie m'a permis de structurer mon approche et de garantir un service de qualité.</p>
             </CardContent>
           </Card>
-          <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
+          <Card className="card-ultra-smooth border border-blue-100 dark:border-gray-700 hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 dark:bg-gray-800/80 hover:scale-[1.02] hover:-translate-y-2">
             <CardHeader>
               <div className="flex items-center gap-3">
-                <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/40">
+                <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/40 transition-all duration-elegant hover:scale-110 hover:rotate-3">
                   <Zap className="h-5 w-5 text-blue-600 dark:text-blue-400" />
                 </div>
                 <CardTitle>Solution-oriented</CardTitle>

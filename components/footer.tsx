@@ -7,10 +7,10 @@ export default function Footer() {  return (
       <div className="container max-w-8xl mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-4">
           <Image
-            src="/alten-logo.jpg"
+            src="/alten-logo.png"
             alt="ALTEN Logo"
-            width={80}
-            height={53}
+            width={56}
+            height={37}
             className="object-contain"
           />
           <div className="h-10 w-px bg-gradient-to-b from-blue-200 to-red-200 mx-2"></div>          <div className="text-sm">

@@ -6,9 +6,21 @@ module.exports = {
     "./app/**/*.{ts,tsx}",
     "./src/**/*.{ts,tsx}",
     "*.{js,ts,jsx,tsx,mdx}",
-  ],
-  theme: {
+  ],  theme: {
     extend: {
+      // Durées de transition personnalisées
+      transitionDuration: {
+        'smooth': '600ms',
+        'gentle': '800ms',
+        'elegant': '1200ms',
+      },
+      // Courbes d'animation personnalisées
+      transitionTimingFunction: {
+        'smooth': 'cubic-bezier(0.4, 0.0, 0.2, 1)',
+        'gentle': 'cubic-bezier(0.25, 0.46, 0.45, 0.94)',
+        'elegant': 'cubic-bezier(0.23, 1, 0.32, 1)',
+        'bounce': 'cubic-bezier(0.68, -0.55, 0.265, 1.55)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
