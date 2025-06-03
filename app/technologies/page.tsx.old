@@ -13,8 +13,7 @@ export default function Technologies() {
       />
 
       <div className="mt-12">
-        <Tabs defaultValue="technical" className="w-full">
-          <TabsList className="grid w-full grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+        <Tabs defaultValue="technical" className="w-full">          <TabsList className="grid w-full grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
             <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
               Compétences techniques
             </TabsTrigger>
@@ -23,8 +22,7 @@ export default function Technologies() {
             </TabsTrigger>
           </TabsList>
           <TabsContent value="technical" className="mt-6">
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+            <div className="grid gap-6 md:grid-cols-2">              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
@@ -36,8 +34,7 @@ export default function Technologies() {
                         Configuration et maintenance de systèmes Windows, gestion des mises à jour
                       </CardDescription>
                     </div>
-                  </div>
-                </CardHeader>
+                  </div>                </CardHeader>
                 <CardContent className="space-y-4 pt-4">
                   <SkillProgress 
                     name="Windows 10/11" 
@@ -60,9 +57,7 @@ export default function Technologies() {
                     icon={Server} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
@@ -75,8 +70,7 @@ export default function Technologies() {
                       </CardDescription>
                     </div>
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-4 pt-4">
+                </CardHeader>                <CardContent className="space-y-4 pt-4">
                   <SkillProgress 
                     name="ServiceNow" 
                     description="Plateforme de gestion des services IT et de traitement des tickets d'assistance"
@@ -98,9 +92,7 @@ export default function Technologies() {
                     icon={Database} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
@@ -113,8 +105,7 @@ export default function Technologies() {
                       </CardDescription>
                     </div>
                   </div>
-                </CardHeader>
-                <CardContent className="space-y-4 pt-4">
+                </CardHeader>                <CardContent className="space-y-4 pt-4">
                   <SkillProgress 
                     name="Gestion des droits utilisateurs" 
                     description="Attribution et contrôle des accès aux ressources informatiques de l'entreprise"
@@ -136,9 +127,7 @@ export default function Technologies() {
                     icon={Shield} 
                   />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
@@ -153,33 +142,16 @@ export default function Technologies() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 pt-4">
-                  <SkillProgress 
-                    name="Microsoft 365 Admin" 
-                    description="Interface d'administration pour la gestion des utilisateurs et services Office 365"
-                    icon={Cloud} 
-                  />
-                  <SkillProgress 
-                    name="Exchange Online" 
-                    description="Service de messagerie électronique cloud de Microsoft 365"
-                    icon={Cloud} 
-                  />
-                  <SkillProgress 
-                    name="OneDrive/SharePoint" 
-                    description="Services de stockage et collaboration documentaire dans le cloud Microsoft"
-                    icon={Cloud} 
-                  />
-                  <SkillProgress 
-                    name="Teams" 
-                    description="Plateforme de communication et collaboration d'équipe de Microsoft"
-                    icon={Cloud} 
-                  />
+                  <SkillProgress name="Microsoft 365 Admin" level={75} icon={Cloud} />
+                  <SkillProgress name="Exchange Online" level={70} icon={Cloud} />
+                  <SkillProgress name="OneDrive/SharePoint" level={80} icon={Cloud} />
+                  <SkillProgress name="Teams" level={85} icon={Cloud} />
                 </CardContent>
               </Card>
             </div>
           </TabsContent>
           <TabsContent value="soft" className="mt-6">
-            <div className="grid gap-6 md:grid-cols-2">
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+            <div className="grid gap-6 md:grid-cols-2">              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
@@ -194,30 +166,12 @@ export default function Technologies() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 pt-4">
-                  <SkillProgress 
-                    name="Écoute active" 
-                    description="Comprendre précisément les besoins et problématiques des utilisateurs"
-                    icon={Users} 
-                  />
-                  <SkillProgress 
-                    name="Vulgarisation technique" 
-                    description="Expliquer des concepts complexes en termes simples et accessibles"
-                    icon={Users} 
-                  />
-                  <SkillProgress 
-                    name="Rédaction de documentation" 
-                    description="Créer des guides clairs et structurés pour les procédures techniques"
-                    icon={Users} 
-                  />
-                  <SkillProgress 
-                    name="Communication écrite" 
-                    description="Rédiger des emails et rapports professionnels et efficaces"
-                    icon={Users} 
-                  />
+                  <SkillProgress name="Écoute active" level={90} icon={Users} />
+                  <SkillProgress name="Vulgarisation technique" level={85} icon={Users} />
+                  <SkillProgress name="Rédaction de documentation" level={80} icon={Users} />
+                  <SkillProgress name="Communication écrite" level={85} icon={Users} />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
@@ -232,30 +186,12 @@ export default function Technologies() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 pt-4">
-                  <SkillProgress 
-                    name="Diagnostic technique" 
-                    description="Identifier rapidement l'origine des dysfonctionnements informatiques"
-                    icon={Brain} 
-                  />
-                  <SkillProgress 
-                    name="Analyse de causes racines" 
-                    description="Rechercher les causes profondes pour éviter la récurrence des problèmes"
-                    icon={Brain} 
-                  />
-                  <SkillProgress 
-                    name="Recherche de solutions" 
-                    description="Trouver des solutions créatives et adaptées aux contraintes techniques"
-                    icon={Brain} 
-                  />
-                  <SkillProgress 
-                    name="Gestion de priorités" 
-                    description="Hiérarchiser les interventions selon l'urgence et l'impact business"
-                    icon={Brain} 
-                  />
+                  <SkillProgress name="Diagnostic technique" level={85} icon={Brain} />
+                  <SkillProgress name="Analyse de causes racines" level={80} icon={Brain} />
+                  <SkillProgress name="Recherche de solutions" level={90} icon={Brain} />
+                  <SkillProgress name="Gestion de priorités" level={85} icon={Brain} />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
@@ -270,30 +206,12 @@ export default function Technologies() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 pt-4">
-                  <SkillProgress 
-                    name="Priorisation des tickets" 
-                    description="Organiser le traitement des demandes selon leur criticité et délais"
-                    icon={Clock} 
-                  />
-                  <SkillProgress 
-                    name="Respect des délais (SLA)" 
-                    description="Tenir les engagements de service et respecter les accords de niveau de service"
-                    icon={Clock} 
-                  />
-                  <SkillProgress 
-                    name="Multitâche" 
-                    description="Gérer plusieurs interventions simultanément sans perdre en efficacité"
-                    icon={Clock} 
-                  />
-                  <SkillProgress 
-                    name="Documentation des procédures" 
-                    description="Capitaliser les connaissances en créant des procédures réutilisables"
-                    icon={Clock} 
-                  />
+                  <SkillProgress name="Priorisation des tickets" level={90} icon={Clock} />
+                  <SkillProgress name="Respect des délais (SLA)" level={85} icon={Clock} />
+                  <SkillProgress name="Multitâche" level={80} icon={Clock} />
+                  <SkillProgress name="Documentation des procédures" level={75} icon={Clock} />
                 </CardContent>
-              </Card>
-
-              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
                 <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
                   <div className="flex items-center gap-3">
                     <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
@@ -308,26 +226,10 @@ export default function Technologies() {
                   </div>
                 </CardHeader>
                 <CardContent className="space-y-4 pt-4">
-                  <SkillProgress 
-                    name="Esprit d'équipe" 
-                    description="Contribuer positivement à l'ambiance et aux objectifs collectifs"
-                    icon={MessageSquare} 
-                  />
-                  <SkillProgress 
-                    name="Partage d'information" 
-                    description="Transmettre les connaissances et bonnes pratiques aux collègues"
-                    icon={MessageSquare} 
-                  />
-                  <SkillProgress 
-                    name="Adaptation à l'équipe" 
-                    description="S'intégrer rapidement dans les méthodes de travail existantes"
-                    icon={MessageSquare} 
-                  />
-                  <SkillProgress 
-                    name="Entraide" 
-                    description="Soutenir les collègues et demander de l'aide quand nécessaire"
-                    icon={MessageSquare} 
-                  />
+                  <SkillProgress name="Esprit d'équipe" level={95} icon={MessageSquare} />
+                  <SkillProgress name="Partage d'information" level={90} icon={MessageSquare} />
+                  <SkillProgress name="Adaptation à l'équipe" level={85} icon={MessageSquare} />
+                  <SkillProgress name="Entraide" level={90} icon={MessageSquare} />
                 </CardContent>
               </Card>
             </div>
