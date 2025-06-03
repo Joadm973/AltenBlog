@@ -1,4 +1,5 @@
-// filepath: c:\Ynov_projects\Stages\test\AltenBlog\app\about-alten\page.tsx
+"use client"
+
 import type React from "react"
 import Image from "next/image"
 import SectionHeader from "@/components/section-header"
@@ -51,16 +52,14 @@ export default function AboutAlten() {
           <StatsCard icon={TrendingUp} title="4,14 Mds €" description="Chiffre d'affaires 2024" />
           <StatsCard icon={Building} title="20+ sites" description="En France" />
         </div>
-      </div>
-
-      <div className="mt-16">
+      </div>      <div className="mt-16">
         <h3 className="mb-6 text-2xl font-bold bg-gradient-to-r from-blue-400 via-red-400 to-yellow-400 bg-clip-text text-transparent">Secteurs d'activité</h3>        <div className="grid gap-6 sm:grid-cols-2 md:grid-cols-3">
-          <SectorCard name="Aéronautique" icon={Plane} />
-          <SectorCard name="Automobile" icon={Car} />
-          <SectorCard name="Télécoms" icon={Phone} />
-          <SectorCard name="Banque & Finance" icon={Landmark} />
-          <SectorCard name="Énergie" icon={Zap} />
-          <SectorCard name="Sciences de la vie" icon={Microscope} />
+          <SectorCard name="Aéronautique" icon={Plane} url="https://www.alten.fr/secteurs-dactivite/aeronautique/" />
+          <SectorCard name="Automobile" icon={Car} url="https://www.alten.fr/secteurs-dactivite/automobile/" />
+          <SectorCard name="Télécoms" icon={Phone} url="https://www.alten.fr/secteurs-dactivite/telecoms-medias/" />
+          <SectorCard name="Banque & Finance" icon={Landmark} url="https://www.alten.fr/secteurs-dactivite/banque-finance-assurance/" />
+          <SectorCard name="Énergie" icon={Zap} url="https://www.alten.fr/secteurs-dactivite/energie-environnement/" />
+          <SectorCard name="Sciences de la vie" icon={Microscope} url="https://www.alten.fr/secteurs-dactivite/sciences-de-la-vie-sante/" />
         </div>
       </div>
 
@@ -98,17 +97,28 @@ function StatsCard({ icon: Icon, title, description }: StatsCardProps) {
 interface SectorCardProps {
   name: string
   icon: React.ComponentType<any>
+  url: string
 }
 
-function SectorCard({ name, icon: Icon }: SectorCardProps) {
+function SectorCard({ name, icon: Icon, url }: SectorCardProps) {
+  const handleClick = () => {
+    window.open(url, '_blank', 'noopener,noreferrer')
+  }
+
   return (
-    <Card className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/20 hover:-translate-y-1 group border-2 border-gray-700 bg-gray-800">
+    <Card 
+      className="overflow-hidden transition-all duration-300 hover:shadow-lg hover:shadow-blue-400/20 hover:-translate-y-1 group border-2 border-gray-700 bg-gray-800 cursor-pointer hover:border-blue-400"
+      onClick={handleClick}
+    >
       <CardContent className="p-6">
         <div className="flex h-full flex-col items-center justify-center text-center">
           <div className="mb-4 h-16 w-16 rounded-full bg-gradient-to-br from-blue-400 to-blue-600 flex items-center justify-center transform transition-transform group-hover:scale-110 shadow-md">
             <Icon className="h-8 w-8 text-white" />
           </div>
-          <h4 className="font-medium group-hover:text-primary text-gray-100 transition-colors">{name}</h4>
+          <h4 className="font-medium group-hover:text-blue-300 text-gray-100 transition-colors">{name}</h4>
+          <p className="text-xs text-gray-400 mt-1 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+            Cliquez pour en savoir plus
+          </p>
         </div>
       </CardContent>
     </Card>
