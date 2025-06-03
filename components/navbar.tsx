@@ -39,27 +39,29 @@ export default function Navbar() {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10 pointer-events-none" />
       <div className="container max-w-8xl mx-auto flex h-16 items-center justify-between px-6 lg:px-8 relative z-10">
         {/* Logo & Branding */}
-        <Link
-          href="/"
-          className="flex items-center space-x-4 group transition-all duration-300 hover:scale-105"
-        >
-          <div className="relative h-12 w-auto overflow-hidden rounded-lg shadow-lg ring-2 ring-blue-500/30">
+        <Link href="/" className="flex items-center gap-4 group transition-all duration-300 hover:scale-105">
+          {/* Logo ALTEN sans fond blanc, blend mode screen */}
+          <div className="relative h-8 w-20 md:h-10 md:w-24">
             <Image
-              src="/alten-logo.jpg"
+              src="/alten-logo.png"
               alt="ALTEN Logo"
-              width={100}
-              height={67}
-              className="object-contain transition-transform duration-300 group-hover:scale-110"
+              fill
+              sizes="(max-width: 768px) 80px, 96px"
+              className="object-contain object-center transition-all duration-300 group-hover:scale-110 opacity-90 group-hover:opacity-100"
+              style={{
+                filter: 'brightness(1.2) contrast(1.1)',
+                mixBlendMode: 'screen'
+              }}
               priority
+              quality={100}
             />
-            {/* Glow effect */}
-            <div className="absolute inset-0 bg-gradient-to-r from-blue-500/0 via-blue-500/20 to-blue-500/0 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
           </div>
+          {/* Texte avec contraste optimisé */}
           <div className="flex flex-col">
-            <span className="text-lg font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent drop-shadow-sm">
+            <span className="text-base md:text-lg font-bold text-blue-200 leading-tight tracking-tight">
               Stage
             </span>
-            <span className="text-lg font-bold bg-gradient-to-r from-blue-300 to-blue-100 bg-clip-text text-transparent tracking-wide drop-shadow-sm">
+            <span className="text-base md:text-lg font-bold text-white leading-tight tracking-wide">
               ALTEN
             </span>
           </div>

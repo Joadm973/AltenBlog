@@ -339,3 +339,56 @@ html.dark {
   --glow-blue: rgba(59, 130, 246, 0.3);
   --gradient-indicator: linear-gradient(90deg, #60a5fa, #ef4444, #fbbf24);
 }
+
+/* Fix pour les titres avec gradients et clipping */
+.gradient-heading,
+.gradient-heading-multicolor {
+  display: inline-block;
+  padding: 6px 3px 10px 3px;
+  line-height: 1.1;
+  -webkit-text-stroke: 0.5px transparent;
+  text-rendering: optimizeLegibility;
+  overflow: visible;
+  margin: 4px 0;
+}
+
+.title-large {
+  padding: 8px 4px 12px 4px !important;
+  line-height: 1 !important;
+  overflow: visible !important;
+}
+
+.title-container {
+  overflow: visible !important;
+  padding: 8px 0 !important;
+}
+
+.no-clip {
+  overflow: visible !important;
+  padding: 6px 3px 10px 3px !important;
+  line-height: 1.1 !important;
+}
+
+.gradient-text-safe {
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke: 0.5px transparent;
+  text-rendering: optimizeLegibility;
+  display: inline-block;
+  padding: 6px 3px 10px 3px;
+  line-height: 1.1;
+  overflow: visible;
+}
+
+.title-parent {
+  overflow: visible !important;
+  padding: 8px 0 !important;
+}
+
+@media (max-width: 768px) {
+  .gradient-text-safe {
+    padding: 4px 2px 8px 2px;
+    line-height: 1.2;
+  }
+}
