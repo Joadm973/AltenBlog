@@ -1,0 +1,276 @@
+import SectionHeader from "@/components/section-header"
+import SkillProgress from "@/components/skill-progress"
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Server, Database, Shield, Cloud, FileText, Users, Brain, Clock, MessageSquare, Zap } from "lucide-react"
+
+export default function Technologies() {
+  return (
+    <div className="container mx-auto px-4 py-12 animate-fade-in relative z-10">
+      <SectionHeader
+        title="Boîte à outils technique et humaine"
+        description="Découvrez les compétences techniques et transversales que j'ai mobilisées durant mon stage."
+      />
+
+      <div className="mt-12">
+        <Tabs defaultValue="technical" className="w-full">          <TabsList className="grid w-full grid-cols-2 p-1 bg-gray-100 dark:bg-gray-800 rounded-xl shadow-sm border border-gray-200 dark:border-gray-700">
+            <TabsTrigger value="technical" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
+              Compétences techniques
+            </TabsTrigger>
+            <TabsTrigger value="soft" className="rounded-lg data-[state=active]:bg-gradient-to-r data-[state=active]:from-blue-600 data-[state=active]:to-blue-700 dark:data-[state=active]:from-blue-500 dark:data-[state=active]:to-blue-600 data-[state=active]:text-white text-gray-700 dark:text-gray-300 dark:data-[state=active]:text-white">
+              Compétences transversales
+            </TabsTrigger>
+          </TabsList>
+          <TabsContent value="technical" className="mt-6">
+            <div className="grid gap-6 md:grid-cols-2">              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                      <Server className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Administration système</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Configuration et maintenance de systèmes Windows, gestion des mises à jour
+                      </CardDescription>
+                    </div>
+                  </div>                </CardHeader>
+                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress 
+                    name="Windows 10/11" 
+                    description="Système d'exploitation de Microsoft pour postes de travail professionnels"
+                    icon={Server} 
+                  />
+                  <SkillProgress 
+                    name="Active Directory" 
+                    description="Service d'annuaire pour la gestion centralisée des utilisateurs et ressources"
+                    icon={Server} 
+                  />
+                  <SkillProgress 
+                    name="GPO (Stratégies de groupe)" 
+                    description="Outil de configuration et de sécurisation des postes via des stratégies"
+                    icon={Server} 
+                  />
+                  <SkillProgress 
+                    name="WSUS" 
+                    description="Service Microsoft de distribution centralisée des mises à jour Windows"
+                    icon={Server} 
+                  />
+                </CardContent>
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                      <Database className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Applications métier</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Outils de gestion des tickets et inventaires informatiques
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress 
+                    name="ServiceNow" 
+                    description="Plateforme de gestion des services IT et de traitement des tickets d'assistance"
+                    icon={Database} 
+                  />
+                  <SkillProgress 
+                    name="OCS Inventory" 
+                    description="Solution open source d'inventaire automatisé du parc informatique"
+                    icon={Database} 
+                  />
+                  <SkillProgress 
+                    name="GLPI" 
+                    description="Logiciel libre de gestion des services informatiques et de l'inventaire"
+                    icon={Database} 
+                  />
+                  <SkillProgress 
+                    name="Microsoft Office" 
+                    description="Suite bureautique de Microsoft (Word, Excel, PowerPoint, Outlook)"
+                    icon={Database} 
+                  />
+                </CardContent>
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                      <Shield className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Sécurité informatique</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Protection des systèmes et gestion des accès utilisateurs
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress 
+                    name="Gestion des droits utilisateurs" 
+                    description="Attribution et contrôle des accès aux ressources informatiques de l'entreprise"
+                    icon={Shield} 
+                  />
+                  <SkillProgress 
+                    name="Antivirus (Windows Defender)" 
+                    description="Solution de protection anti-malware intégrée à Windows 10/11"
+                    icon={Shield} 
+                  />
+                  <SkillProgress 
+                    name="Politiques de mots de passe" 
+                    description="Règles de sécurité pour renforcer la robustesse des identifiants utilisateurs"
+                    icon={Shield} 
+                  />
+                  <SkillProgress 
+                    name="Sensibilisation utilisateurs" 
+                    description="Formation et accompagnement des utilisateurs aux bonnes pratiques de sécurité"
+                    icon={Shield} 
+                  />
+                </CardContent>
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-blue-50 dark:bg-gray-700/50">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-blue-100 dark:bg-blue-900/40 p-2">
+                      <Cloud className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Services cloud</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Gestion des services Microsoft 365 et Azure AD
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress name="Microsoft 365 Admin" level={75} icon={Cloud} />
+                  <SkillProgress name="Exchange Online" level={70} icon={Cloud} />
+                  <SkillProgress name="OneDrive/SharePoint" level={80} icon={Cloud} />
+                  <SkillProgress name="Teams" level={85} icon={Cloud} />
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+          <TabsContent value="soft" className="mt-6">
+            <div className="grid gap-6 md:grid-cols-2">              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                      <Users className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Communication</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Capacités d'écoute et d'explication technique
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress name="Écoute active" level={90} icon={Users} />
+                  <SkillProgress name="Vulgarisation technique" level={85} icon={Users} />
+                  <SkillProgress name="Rédaction de documentation" level={80} icon={Users} />
+                  <SkillProgress name="Communication écrite" level={85} icon={Users} />
+                </CardContent>
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                      <Brain className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Résolution de problèmes</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Méthodes analytiques et approche structurée
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress name="Diagnostic technique" level={85} icon={Brain} />
+                  <SkillProgress name="Analyse de causes racines" level={80} icon={Brain} />
+                  <SkillProgress name="Recherche de solutions" level={90} icon={Brain} />
+                  <SkillProgress name="Gestion de priorités" level={85} icon={Brain} />
+                </CardContent>
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                      <Clock className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Organisation</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Gestion du temps et des tâches multiples
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress name="Priorisation des tickets" level={90} icon={Clock} />
+                  <SkillProgress name="Respect des délais (SLA)" level={85} icon={Clock} />
+                  <SkillProgress name="Multitâche" level={80} icon={Clock} />
+                  <SkillProgress name="Documentation des procédures" level={75} icon={Clock} />
+                </CardContent>
+              </Card>              <Card className="border border-blue-200 dark:border-gray-700 hover:shadow-sm transition-all duration-300 bg-white dark:bg-gray-800/80">
+                <CardHeader className="bg-yellow-50 dark:bg-yellow-900/30">
+                  <div className="flex items-center gap-3">
+                    <div className="rounded-full bg-yellow-100 dark:bg-yellow-900/50 p-2">
+                      <MessageSquare className="h-5 w-5 text-yellow-600 dark:text-yellow-400" />
+                    </div>
+                    <div>
+                      <CardTitle className="text-gray-800 dark:text-gray-200">Travail d'équipe</CardTitle>
+                      <CardDescription className="text-gray-600 dark:text-gray-400">
+                        Collaboration et partage de connaissances
+                      </CardDescription>
+                    </div>
+                  </div>
+                </CardHeader>
+                <CardContent className="space-y-4 pt-4">
+                  <SkillProgress name="Esprit d'équipe" level={95} icon={MessageSquare} />
+                  <SkillProgress name="Partage d'information" level={90} icon={MessageSquare} />
+                  <SkillProgress name="Adaptation à l'équipe" level={85} icon={MessageSquare} />
+                  <SkillProgress name="Entraide" level={90} icon={MessageSquare} />
+                </CardContent>
+              </Card>
+            </div>
+          </TabsContent>
+        </Tabs>
+      </div>
+
+      <div className="mt-16 space-y-8">
+        <SectionHeader
+          title="Méthodologies"
+          description="Les approches et cadres professionnels que j'ai utilisés au quotidien."
+        />
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/40">
+                  <FileText className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                </div>
+                <CardTitle>ITIL</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="dark:text-gray-300">J'ai appliqué les principes ITIL (Information Technology Infrastructure Library) dans la gestion des incidents et la résolution des problèmes informatiques. Cette méthodologie m'a permis de structurer mon approche et de garantir un service de qualité.</p>
+            </CardContent>
+          </Card>
+          <Card className="border border-blue-100 dark:border-gray-700 hover:shadow-sm transition-all duration-300 dark:bg-gray-800/80">
+            <CardHeader>
+              <div className="flex items-center gap-3">
+                <div className="p-2 rounded-full bg-blue-100 dark:bg-blue-900/40">
+                  <Zap className="h-5 w-5 text-blue-600 dark:text-blue-400" />
+                </div>
+                <CardTitle>Solution-oriented</CardTitle>
+              </div>
+            </CardHeader>
+            <CardContent>
+              <p className="dark:text-gray-300">J'ai adopté une approche orientée solution, centrée sur la recherche rapide de réponses pratiques aux problèmes des utilisateurs. Cette méthode m'a permis de traiter efficacement un volume important de tickets tout en maintenant un haut niveau de satisfaction.</p>
+            </CardContent>
+          </Card>
+        </div>
+      </div>
+    </div>
+  )
+}
