@@ -48,23 +48,17 @@ export default function Learnings() {
             <li>La rapidité avec laquelle j'ai pu monter en compétences grâce à l'accompagnement de l'équipe</li>
           </ul>
         </InfoCard>
-      </div>      <div className="mt-16">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100 transition-colors duration-elegant">Une anecdote représentative</h3>
+      </div>      <div className="mt-16">
+        <h2 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100 transition-colors duration-elegant">Une anecdote représentative</h2>
         <div className="rounded-xl bg-white dark:bg-gray-800 p-6 border-2 border-blue-200 dark:border-gray-700 shadow-md transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/20 dark:hover:shadow-blue-400/20 hover:scale-[1.01] hover:-translate-y-1">
           <p className="italic text-slate-800 dark:text-gray-200">
-            Lors d'une journée particulièrement chargée, notre équipe a été confrontée à un afflux massif de tickets urgents 
-            avec des problèmes de connexion pour plusieurs départements. 
-            Face à cette situation critique, nous avons immédiatement mis en place une stratégie de répartition des tâches 
-            basée sur les compétences de chacun.
+            Lors d'une journée particulière de mon stage, le site ALTEN de Brive-la-Gaillarde a rencontré des problèmes de connexion réseau qui limitaient le nombre de postes pouvant se connecter simultanément. Face à cette situation critique, mon tuteur de stage et moi avons pris la voiture de société pour nous rendre sur place et installer un switch réseau au serveur pour pouvoir augmenter le nombre de connexions possibles.
           </p>
           <p className="mt-4 italic text-slate-800 dark:text-gray-200">
-            Grâce à l'esprit d'équipe et une communication fluide entre les membres, nous avons pu traiter méthodiquement 
-            chaque ticket par ordre de priorité. J'ai été impressionné par notre capacité collective à rester calmes sous pression 
-            et à nous entraider lorsque l'un d'entre nous rencontrait une difficulté technique particulière.
+            Cette mission m'a permis de découvrir une facette différente du métier de support informatique : l'intervention directe sur site. J'ai pu observer concrètement l'installation matérielle et comprendre que le support technique ne se limite pas au traitement de tickets à distance.
           </p>
           <p className="mt-4 italic text-slate-800 dark:text-gray-200">
-            Cette expérience m'a démontré que grâce à l'esprit d'équipe, nous pouvions gérer efficacement un grand nombre de 
-            tickets urgents et les traiter à temps, même dans les situations les plus tendues. La satisfaction des utilisateurs 
-            et les remerciements de notre responsable ont confirmé l'importance de cette collaboration.
+            Cette expérience a été particulièrement enrichissante car elle m'a montré l'importance du contact direct avec les utilisateurs finaux. Voir l'impact immédiat de notre intervention sur leur productivité quotidienne a renforcé ma compréhension du rôle crucial du service support dans l'écosystème d'une entreprise.
           </p>
         </div>
       </div><div className="mt-16">
