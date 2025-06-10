@@ -78,9 +78,16 @@
   .section-padding {
     @apply py-14 md:py-20;
   }
+    .page-container {
+    @apply w-full mx-auto px-4 sm:px-6 lg:px-8 xl:px-12 2xl:px-16;
+  }
   
-  .page-container {
-    @apply max-w-8xl mx-auto px-4 sm:px-6 lg:px-8;
+  .full-width-container {
+    @apply w-full px-4 sm:px-6 lg:px-8;
+  }
+  
+  .content-grid {
+    @apply grid gap-6 grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5;
   }
     .btn-primary {
     background: linear-gradient(135deg, #1d4ed8, #312e81);

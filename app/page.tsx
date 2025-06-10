@@ -15,10 +15,8 @@ export default function Home() {
         primaryButtonText="Découvrir mon expérience"
         primaryButtonHref="/my-role"
         isAnimated={true}
-      />
-
-      <section className="w-full py-12 md:py-24 bg-gradient-to-b from-gray-900 via-blue-900/10 to-gray-900 relative overflow-hidden flex items-center justify-center">
-        <div className="container max-w-8xl mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
+      />      <section className="w-full py-12 md:py-24 bg-gradient-to-b from-gray-900 via-blue-900/10 to-gray-900 relative overflow-hidden flex items-center justify-center">
+        <div className="container w-full mx-auto px-4 md:px-6 flex flex-col items-center relative z-10">
           <div className="flex flex-col items-center justify-center space-y-4 text-center max-w-4xl mx-auto">
             <div className="space-y-2">
               <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-slate-100">Explorez mon parcours</h2>
@@ -27,7 +25,7 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <div className="mx-auto grid max-w-7xl grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mx-auto grid w-full max-w-none grid-cols-1 gap-6 py-12 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5">
             <SectionCard
               title="ALTEN"
               description="Découvrez ce leader mondial de l'ingénierie et des IT Services"

@@ -2,9 +2,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Linkedin } from "lucide-react"
 
-export default function Footer() {  return (
-    <footer className="w-full border-t border-gray-700 bg-gradient-to-b from-gray-900 to-gray-800 py-8">
-      <div className="container max-w-8xl mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
+export default function Footer() {  return (    <footer className="w-full border-t border-gray-700 bg-gradient-to-b from-gray-900 to-gray-800 py-8">
+      <div className="container w-full mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
         <div className="flex items-center gap-4">
           <Image
             src="/alten-logo.png"

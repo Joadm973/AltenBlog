@@ -24,10 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning className="dark">
-      <body className={cn("min-h-screen bg-gray-900 text-gray-100 font-sans antialiased", fontSans.variable)}>
-        <div className="flex min-h-screen flex-col">
+      <body className={cn("min-h-screen bg-gray-900 text-gray-100 font-sans antialiased", fontSans.variable)}>        <div className="flex min-h-screen flex-col">
           <Navbar />
-          <main className="flex-1 w-full max-w-8xl mx-auto px-4">{children}</main>
+          <main className="flex-1 w-full px-4">{children}</main>
           <Footer />
         </div>
       </body>
