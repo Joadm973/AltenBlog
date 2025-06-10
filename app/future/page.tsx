@@ -99,18 +99,16 @@ export default function Future() {
 
       <div className="mt-16">
         <h3 className="mb-6 text-2xl font-bold gradient-heading">Un tremplin vers mes ambitions</h3>
-        <div className="grid gap-6 md:grid-cols-2">
-          <div className="space-y-4 rounded-xl bg-gradient-to-br from-blue-50 to-blue-100 dark:from-blue-900/30 dark:to-blue-800/30 p-6 border-2 border-blue-200 dark:border-blue-700">
-            <h4 className="font-semibold text-blue-800 dark:text-blue-300">Compétences techniques valorisables</h4>
+        <div className="grid gap-6 md:grid-cols-2">          <div className="space-y-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm">
+            <h4 className="font-semibold text-gray-800 dark:text-gray-200">Compétences techniques valorisables</h4>
             <ul className="ml-6 list-disc space-y-2 text-gray-700 dark:text-gray-300">
               <li>Maîtrise des environnements Windows et des bases de données</li>
               <li>Expérience des outils Microsoft (Excel avancé, Power Platform)</li>
               <li>Compréhension des architectures cloud (Azure, Office 365)</li>
               <li>Gestion de projets techniques et documentation</li>
             </ul>
-          </div>
-          <div className="space-y-4 rounded-xl bg-gradient-to-br from-green-50 to-green-100 dark:from-green-900/30 dark:to-green-800/30 p-6 border-2 border-green-200 dark:border-green-700">
-            <h4 className="font-semibold text-green-800 dark:text-green-300">Soft skills développées</h4>
+          </div>          <div className="space-y-4 bg-white dark:bg-gray-800 border border-gray-200 dark:border-gray-700 p-6 rounded-xl shadow-sm">
+            <h4 className="font-semibold text-gray-800 dark:text-gray-200">Soft skills développées</h4>
             <ul className="ml-6 list-disc space-y-2 text-gray-700 dark:text-gray-300">
               <li>Communication claire avec des profils non-techniques</li>
               <li>Résolution de problèmes sous pression</li>

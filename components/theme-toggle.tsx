@@ -15,7 +15,7 @@ export default function ThemeToggle() {
   return (
     <button
       aria-label="Changer le thème"
-      className="rounded-full p-2 transition-all duration-gentle ease-elegant bg-gradient-to-r from-blue-700 to-yellow-500 dark:from-blue-400 dark:to-yellow-400 text-white shadow hover:scale-110 hover:rotate-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:shadow-lg hover:shadow-blue-500/30"
+      className="rounded-full p-2 transition-all duration-gentle ease-elegant bg-gradient-to-r from-blue-700 to-blue-800 dark:from-blue-600 dark:to-blue-800 text-white shadow hover:scale-110 hover:rotate-12 focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 hover:shadow-lg hover:shadow-blue-500/30"
       onClick={() => setTheme(theme === "dark" ? "light" : "dark")}
       type="button"
     >
