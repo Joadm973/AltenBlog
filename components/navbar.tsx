@@ -33,15 +33,13 @@ export default function Navbar() {
           ? "bg-gray-900/95 backdrop-blur-md shadow-2xl shadow-blue-500/20 border-b border-blue-500/30"
           : "bg-gray-900/90 backdrop-blur-sm border-b border-gray-700/50"
       }`}
-    >
-      {/* Gradient overlay subtil */}
+    >      {/* Gradient overlay subtil */}
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10 pointer-events-none" />
-      <div className="container max-w-8xl mx-auto flex h-16 items-center justify-between px-6 lg:px-8 relative z-10">
-        {/* Logo & Branding */}        <Link href="/" className="flex items-center gap-4 group transition-all duration-elegant ease-elegant hover:scale-105">
-          {/* Logo ALTEN sans fond blanc, blend mode screen */}
-          <div className="relative h-8 w-20 md:h-10 md:w-24 transition-all duration-elegant ease-elegant">
+      <div className="flex h-16 items-center justify-between px-6 lg:px-8 relative z-10 w-full">
+        {/* Logo & Branding */}        <Link href="/" className="flex items-center gap-0.5 group transition-all duration-elegant ease-elegant hover:scale-105">
+          {/* Logo ALTEN sans fond blanc, blend mode screen */}          <div className="relative h-8 w-20 md:h-10 md:w-24 transition-all duration-elegant ease-elegant">
             <Image
-              src="/alten-logo.png"
+              src="/ALTEN-Logo.wine.navbar.png"
               alt="ALTEN Logo"
               fill
               sizes="(max-width: 768px) 80px, 96px"
@@ -113,10 +111,9 @@ export default function Navbar() {
             ? "max-h-[600px] opacity-100 translate-y-0"
             : "max-h-0 opacity-0 -translate-y-4 overflow-hidden"
         }`}
-      >
-        {/* Gradient top border */}
+      >        {/* Gradient top border */}
         <div className="h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-        <div className="container py-6 px-6">
+        <div className="py-6 px-6 w-full">
           <div className="flex flex-col space-y-3">
             {navItems.map((item, index) => {
               const isActive = pathname === item.href

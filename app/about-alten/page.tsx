@@ -1,6 +1,6 @@
 "use client"
 
-import type React f        <div className="relative w-full h-full overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-gentle ease-elegant hover:scale-[1.03] hover:-translate-y-2 border-2 border-gray-700 bg-gray-900 flex items-end">       <div class="relative w-full h-full overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-gentle ease-elegant hover:scale-[1.03] hover:-translate-y-2 border-2 border-gray-700 bg-gray-900 flex items-end">om "react"
+import type React from "react"
 import Image from "next/image"
 import SectionHeader from "@/components/section-header"
 import QuoteCard from "@/components/quote-card"
@@ -21,7 +21,7 @@ export default function AboutAlten() {
               secteurs industriels et technologiques, notamment l'Aéronautique, l'Automobile, les Télécoms, la Banque et
               l'Énergie.
             </p>            <p className="text-gray-300 transition-colors duration-gentle ease-elegant">
-              En 2024, <span className="font-semibold text-blue-300 transition-colors duration-gentle ease-elegant">ALTEN</span> a réalisé un chiffre d'affaires de <span className="font-semibold">4,14 milliards d'euros</span>avec <span className="font-semibold">57 700 collaborateurs</span> dans le
+              En 2024, <span className="font-semibold text-blue-300 transition-colors duration-gentle ease-elegant">ALTEN</span> a réalisé un chiffre d'affaires de <span className="font-semibold">4,14 milliards d'euros</span> avec <span className="font-semibold">57 700 collaborateurs</span> dans le
               monde, dont 88% sont des ingénieurs-consultants. En France, l'entreprise compte 13 470 collaborateurs
               répartis sur une vingtaine de sites pour un chiffre d'affaires de 1 360 millions d'euros.
             </p>
@@ -30,15 +30,13 @@ export default function AboutAlten() {
               structuré autour de trois piliers : l'innovation durable, l'environnement et l'humain.
             </p>
           </div>
-        </div>
-        
-        <div className="h-full flex items-stretch">
-          <div className="relative w-full h-full overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-gentle ease-elegant hover:scale-[1.03] hover:-translate-y-2 border-2 border-gray-700 bg-gray-800 flex items-end">
+        </div>        <div className="h-full flex items-stretch">
+          <div className="relative w-full h-[450px] overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-gentle ease-elegant hover:scale-[1.03] hover:-translate-y-2 border-2 border-gray-700 bg-gray-900 flex items-end">
             <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 rounded-xl transition-all duration-gentle ease-elegant"></div>
             <Image 
               src="/alten-logo.png" 
               alt="Logo ALTEN" 
-              className="object-contain rounded-xl transition-transform duration-elegant ease-elegant p-8"
+              className="object-contain rounded-xl transition-transform duration-elegant ease-elegant p-4"
               style={{ objectPosition: 'center' }}
               fill
             />
