@@ -61,15 +61,15 @@ export default function Navbar() {
               ALTEN
             </span>
           </div>
-        </Link>
-        {/* Navigation Desktop */}
-        <nav className="hidden md:flex md:gap-2 lg:gap-4 md:items-center">
+        </Link>        {/* Navigation Desktop */}
+        <nav className="hidden md:flex md:gap-1 lg:gap-2 md:items-center ml-auto">
           {navItems.map((item) => {
             const isActive = pathname === item.href
             return (
               <Link
                 key={item.name}
-                href={item.href}                className={`relative px-4 py-3 text-sm font-medium transition-all duration-gentle ease-elegant group rounded-lg hover-glow navbar-text-shadow ${
+                href={item.href}
+                className={`relative px-3 py-3 text-sm font-medium transition-all duration-gentle ease-elegant group rounded-lg hover-glow navbar-text-shadow ${
                   isActive
                     ? "text-white bg-gradient-to-r from-blue-600 to-blue-700 shadow-lg shadow-blue-500/30"
                     : "text-gray-200 hover:text-white hover:bg-white/10 backdrop-blur-sm"

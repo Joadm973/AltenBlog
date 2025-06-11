@@ -9,6 +9,10 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  output: 'export',
+  trailingSlash: true,
+  basePath: process.env.NODE_ENV === 'production' ? '/AltenBlog' : '',
+  assetPrefix: process.env.NODE_ENV === 'production' ? '/AltenBlog/' : '',
 }
 
 export default nextConfig
