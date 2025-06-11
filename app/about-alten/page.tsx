@@ -6,6 +6,7 @@ import SectionHeader from "@/components/section-header"
 import QuoteCard from "@/components/quote-card"
 import { Card, CardContent } from "@/components/ui/card"
 import { Building, Users, Globe, TrendingUp, Plane, Car, Phone, Landmark, Zap, Microscope } from "lucide-react"
+import { getAssetPath } from "@/lib/assets"
 
 export default function AboutAlten() {
   return (
@@ -32,10 +33,9 @@ export default function AboutAlten() {
           </div>
         </div>        <div className="h-full flex items-stretch">
           <div className="relative w-full h-[450px] overflow-hidden rounded-xl shadow-md hover:shadow-xl transition-all duration-gentle ease-elegant hover:scale-[1.03] hover:-translate-y-2 border-2 border-gray-700 bg-gray-900 flex items-end">
-            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 rounded-xl transition-all duration-gentle ease-elegant"></div>
-            <Image 
-              src="/alten-logo.png" 
-              alt="Logo ALTEN" 
+            <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent z-10 rounded-xl transition-all duration-gentle ease-elegant"></div>            <Image 
+              src={getAssetPath("alten-logo.png")} 
+              alt="Logo ALTEN"
               className="object-contain rounded-xl transition-transform duration-elegant ease-elegant p-4"
               style={{ objectPosition: 'center' }}
               fill

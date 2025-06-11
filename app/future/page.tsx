@@ -3,6 +3,7 @@ import SectionHeader from "@/components/section-header"
 import QuoteCard from "@/components/quote-card"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { ArrowRight, Database, BarChart3, Brain, Users } from "lucide-react"
+import { getAssetPath } from "@/lib/assets"
 
 export default function Future() {
   return (
@@ -31,7 +32,7 @@ export default function Future() {
         </div>        <div className="flex items-center justify-center">
           <div className="relative h-[350px] w-full overflow-hidden rounded-xl shadow-md border border-blue-50 dark:border-blue-900/30">
             <Image
-              src="/futur.jpg"
+              src={getAssetPath("futur.jpg")}
               alt="Pont entre l'IT et la data science"
               fill
               className="object-cover transition-transform duration-700 hover:scale-105"

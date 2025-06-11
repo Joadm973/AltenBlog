@@ -1,12 +1,12 @@
 import Link from "next/link"
 import Image from "next/image"
 import { Linkedin } from "lucide-react"
+import { getAssetPath } from "@/lib/assets"
 
 export default function Footer() {  return (    <footer className="w-full border-t border-gray-700 bg-gradient-to-b from-gray-900 to-gray-800 py-8">
       <div className="container w-full mx-auto px-4 flex flex-col items-center justify-between gap-6 md:flex-row">
-        <div className="flex items-center gap-4">
-          <Image
-            src="/alten-logo.png"
+        <div className="flex items-center gap-4">          <Image
+            src={getAssetPath("alten-logo.png")}
             alt="ALTEN Logo"
             width={56}
             height={37}

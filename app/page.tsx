@@ -4,13 +4,14 @@ import HeroSection from "@/components/hero-section"
 import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { ChevronRight, Calendar } from "lucide-react"
+import { getAssetPath } from "@/lib/assets"
 
 export default function Home() {
   return (
     <div className="flex flex-col">      <HeroSection
         title={<span className="gradient-heading">Mon expérience au Support Informatique chez ALTEN</span>}
         description="Découvrez mon parcours de 8 semaines en tant que Technicien Support Informatique au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
-        imageSrc="/support-informatique.jpg"
+        imageSrc={getAssetPath("support-informatique.jpg")}
         imageAlt="Bureau moderne avec des écrans d'ordinateur représentant le support informatique"
         primaryButtonText="Découvrir mon expérience"
         primaryButtonHref="/my-role"

@@ -6,6 +6,7 @@ import { usePathname } from "next/navigation"
 import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronRight } from "lucide-react"
 import Image from "next/image"
+import { getAssetPath } from "@/lib/assets"
 
 const navItems = [
   { name: "Accueil", href: "/" },
@@ -37,9 +38,8 @@ export default function Navbar() {
       <div className="absolute inset-0 bg-gradient-to-r from-blue-900/10 via-transparent to-purple-900/10 pointer-events-none" />
       <div className="flex h-16 items-center justify-between px-6 lg:px-8 relative z-10 w-full">
         {/* Logo & Branding */}        <Link href="/" className="flex items-center gap-0.5 group transition-all duration-elegant ease-elegant hover:scale-105">
-          {/* Logo ALTEN sans fond blanc, blend mode screen */}          <div className="relative h-8 w-20 md:h-10 md:w-24 transition-all duration-elegant ease-elegant">
-            <Image
-              src="/ALTEN-Logo.wine.navbar.png"
+          {/* Logo ALTEN sans fond blanc, blend mode screen */}          <div className="relative h-8 w-20 md:h-10 md:w-24 transition-all duration-elegant ease-elegant">            <Image
+              src={getAssetPath("ALTEN-Logo.wine.navbar.png")}
               alt="ALTEN Logo"
               fill
               sizes="(max-width: 768px) 80px, 96px"
