@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button"
 import { Menu, X, ChevronRight } from "lucide-react"
 import Image from "next/image"
 import { getAssetPath } from "@/lib/assets"
+import { useActiveRoute } from "@/hooks/use-active-route"
 
 const navItems = [
   { name: "Accueil", href: "/" },
@@ -21,6 +22,7 @@ export default function Navbar() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
   const [scrolled, setScrolled] = useState(false)
   const pathname = usePathname()
+  const { isActiveRoute } = useActiveRoute()
 
   useEffect(() => {
     const handleScroll = () => setScrolled(window.scrollY > 20)
@@ -61,10 +63,9 @@ export default function Navbar() {
               ALTEN
             </span>
           </div>
-        </Link>        {/* Navigation Desktop */}
-        <nav className="hidden md:flex md:gap-1 lg:gap-2 md:items-center ml-auto">
+        </Link>        {/* Navigation Desktop */}        <nav className="hidden md:flex md:gap-1 lg:gap-2 md:items-center ml-auto">
           {navItems.map((item) => {
-            const isActive = pathname === item.href
+            const isActive = isActiveRoute(item.href)
             return (
               <Link
                 key={item.name}
@@ -113,10 +114,9 @@ export default function Navbar() {
         }`}
       >        {/* Gradient top border */}
         <div className="h-px bg-gradient-to-r from-transparent via-blue-500 to-transparent" />
-        <div className="py-6 px-6 w-full">
-          <div className="flex flex-col space-y-3">
+        <div className="py-6 px-6 w-full">          <div className="flex flex-col space-y-3">
             {navItems.map((item, index) => {
-              const isActive = pathname === item.href
+              const isActive = isActiveRoute(item.href)
               return (
                 <Link
                   key={item.name}

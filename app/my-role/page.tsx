@@ -68,7 +68,7 @@ export default function MyRole() {
             <ul className="space-y-2 pl-10">
               <li className="flex items-center">
                 <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></div>
-                <span className="text-gray-300">Collaboration avec l'équipe Déploiement pour les masterisations</span>
+                <span className="text-gray-300">Collaboration avec l'équipe : Déploiement pour les masterisations</span>
               </li>
               <li className="flex items-center">
                 <div className="w-1.5 h-1.5 bg-gray-400 rounded-full mr-2"></div>
