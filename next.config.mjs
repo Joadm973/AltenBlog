@@ -11,8 +11,8 @@ const nextConfig = {
   },
   output: 'export',
   trailingSlash: true,
-  basePath: process.env.NODE_ENV === 'production' ? '/AltenBlog' : '',
-  assetPrefix: process.env.NODE_ENV === 'production' ? '/AltenBlog/' : '',
+  basePath: '/AltenBlog',
+  assetPrefix: '/AltenBlog/',
 }
 
 export default nextConfig
