@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className="flex flex-col">      <HeroSection
         title={<span className="gradient-heading">Mon expérience au Support Informatique chez ALTEN</span>}
-        description="Découvrez mon parcours de 8 semaines en tant que Technicien Support Informatique au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
+        description="Découvrez mon parcours de 3 mois en tant que Technicien Support Informatique au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
         imageSrc={getAssetPath("support-informatique.jpg")}
         imageAlt="Bureau moderne avec des écrans d'ordinateur représentant le support informatique"
         primaryButtonText="Découvrir mon expérience"

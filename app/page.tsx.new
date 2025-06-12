@@ -11,7 +11,7 @@ export default function Home() {
     <div className="flex flex-col">
       <HeroSection
         title={<span className="bg-gradient-to-r from-blue-700 via-red-600 to-yellow-500 bg-clip-text text-transparent pb-2">Mon exp�rience en Support Informatique chez ALTEN</span>}
-        description="D�couvrez mon parcours de 8 semaines en tant que Technicien Support Informatique N1/N2 au sein d'ALTEN, leader mondial de l'ing�nierie et des IT Services."
+        description="Découvrez mon parcours de 3 mois en tant que Technicien Support Informatique N1/N2 au sein d'ALTEN, leader mondial de l'ingénierie et des IT Services."
         imageSrc="/placeholder.svg?height=600&width=800"
         imageAlt="Bureau moderne avec des �crans d'ordinateur repr�sentant le support informatique"
         primaryButtonText="D�couvrir mon exp�rience"

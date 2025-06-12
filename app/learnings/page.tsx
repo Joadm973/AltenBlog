@@ -12,27 +12,32 @@ export default function Learnings() {
         description="Découvrez ce que j'ai appris durant mon stage et les défis que j'ai relevés."
       />
 
-      <div className="mt-12">
-        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100 transition-colors duration-elegant">Mon parcours d'apprentissage</h3>
+      <div className="mt-12">        <h3 className="mb-6 text-2xl font-bold text-slate-900 dark:text-gray-100 transition-colors duration-elegant">Mon parcours d'apprentissage (3 mois)</h3>
         <div className="mt-8">
           <TimelineItem
-            date="Semaine 1-2"
+            date="Semaines 1-2"
             title="Découverte et intégration"
             description="Prise en main des outils et découverte de l'environnement de travail. Formation sur ServiceNow et les procédures internes."
           />
           <TimelineItem
-            date="Semaine 3-4"
+            date="Semaines 3-4"
             title="Autonomie progressive"
             description="Traitement autonome des tickets de niveau 1. Apprentissage des techniques de masterisation."
           />
           <TimelineItem
-            date="Semaine 5-6"
+            date="Semaines 5-7"
             title="Montée en compétences"
             description="Gestion de tickets plus complexes (niveau 2). Participation active au projet de transition vers Intune/Autopilot."
-          />          <TimelineItem
-            date="Semaine 7-8"
-            title="Autonomie complète"
-            description="Gestion autonome des incidents critiques sans supervision. Mise en place de procédures personnalisées pour optimiser la résolution des problèmes récurrents."
+          />
+          <TimelineItem
+            date="Semaines 8-10"
+            title="Expertise technique"
+            description="Intervention sur site (Brive-la-Gaillarde). Gestion autonome des incidents critiques sans supervision."
+          />
+          <TimelineItem
+            date="Semaines 11-12"
+            title="Autonomie complète et bilan"
+            description="Mise en place de procédures personnalisées pour optimiser la résolution des problèmes récurrents. Transmission des connaissances."
           />
         </div>
       </div>      <div className="mt-16 grid gap-8 md:grid-cols-2">

@@ -10,13 +10,12 @@ export default function MyRole() {
         title="Dans les coulisses du Support Informatique"
         description="Découvrez mon rôle et mes missions principales au sein du service Support Informatique d'ALTEN."
       />      <div className="mt-12 space-y-6 p-6 rounded-xl bg-gray-50 dark:bg-gray-900 border border-gray-200 dark:border-gray-700 shadow-lg transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/10 dark:hover:shadow-blue-500/10 hover:-translate-y-1">
-        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Description de mon rôle</h3>
-        <p className="text-lg text-gray-800 dark:text-gray-200">
-          Durant ce stage au sein du service Support Informatique d'ALTEN, j'ai occupé le poste de Technicien Support
+        <h3 className="text-2xl font-bold text-gray-800 dark:text-gray-100">Description de mon rôle</h3>        <p className="text-lg text-gray-800 dark:text-gray-200">
+          Durant ce stage de 3 mois au sein du service Support Informatique d'ALTEN, j'ai occupé le poste de Technicien Support
           Informatique. Ma mission principale consistait à assurer un support technique de qualité aux
           collaborateurs de l'entreprise, afin de garantir la continuité de service et de minimiser l'impact des
           incidents informatiques sur leur productivité.
-        </p>      </div>      <div className="mt-12 p-0 rounded-xl bg-gray-900 border border-gray-700 shadow-lg transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/20 overflow-hidden">
+        </p></div>      <div className="mt-12 p-0 rounded-xl bg-gray-900 border border-gray-700 shadow-lg transition-all duration-elegant hover:shadow-xl hover:shadow-blue-500/20 overflow-hidden">
         <div className="border-b border-gray-700 bg-gray-800 p-5">
           <h3 className="text-2xl font-bold text-gray-100">Mon intégration dans l'équipe</h3>
         </div>
