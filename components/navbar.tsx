@@ -107,7 +107,7 @@ export default function Navbar() {
         </Button>
       </div>
       {/* Menu mobile animé */}
-      <div        className={`absolute top-full left-0 w-full bg-gray-900/98 backdrop-blur-xl border-t border-blue-500/30 shadow-2xl transition-all duration-elegant ease-elegant md:hidden ${
+      <div        className={`absolute top-full left-0 w-full bg-gray-900 backdrop-blur-xl border-t border-blue-500/30 shadow-2xl transition-all duration-elegant ease-elegant md:hidden z-50 ${
           mobileMenuOpen
             ? "max-h-[600px] opacity-100 translate-y-0"
             : "max-h-0 opacity-0 -translate-y-4 overflow-hidden"
@@ -137,12 +137,19 @@ export default function Navbar() {
                   )}
                 </Link>
               )
-            })}
-            {/* Séparateur avec gradient */}
+            })}            {/* Séparateur avec gradient */}
             <div className="my-4 h-px bg-gradient-to-r from-transparent via-gray-600 to-transparent" />
           </div>
         </div>
       </div>
+      
+      {/* Overlay sombre pour fermer le menu mobile */}
+      {mobileMenuOpen && (
+        <div 
+          className="fixed inset-0 bg-black/50 z-40 md:hidden"
+          onClick={() => setMobileMenuOpen(false)}
+        />
+      )}
     </header>
   )
 }
