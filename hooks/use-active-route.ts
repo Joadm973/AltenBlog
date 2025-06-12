@@ -7,7 +7,20 @@ export function useActiveRoute() {
   const normalizedPathname = pathname.replace('/AltenBlog', '') || '/'
   
   const isActiveRoute = (href: string) => {
-    return normalizedPathname === href
+    // Normalize href as well
+    const normalizedHref = href.replace('/AltenBlog', '') || '/'
+    
+    // Exact match for home page
+    if (normalizedHref === '/' && normalizedPathname === '/') {
+      return true
+    }
+    
+    // For other pages, check if pathname starts with href
+    if (normalizedHref !== '/' && normalizedPathname.startsWith(normalizedHref)) {
+      return true
+    }
+    
+    return false
   }
   
   return {
